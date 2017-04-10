@@ -1,4 +1,148 @@
 @import url(../fonts/fonts.css);
+nav {
+  float: right;
+  display: flex;
+  align-items: center;
+  height: 105px; }
+  nav ul {
+    margin: 0;
+    padding: 0; }
+    nav ul li {
+      float: left;
+      position: relative; }
+      nav ul li a {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #847c78;
+        display: block;
+        padding: 8px 10px;
+        margin: 0 15px;
+        text-decoration: none; }
+        nav ul li a:hover {
+          color: #004c9a;
+          border-color: #004c9a; }
+        nav ul li a:not(:only-child):after {
+          padding-left: 4px;
+          content: 'd'; }
+      nav ul li .btn-signin, nav ul li .btn-cart {
+        padding: 8px 10px;
+        border: solid 1px #a0a1a4; }
+      nav ul li ul li {
+        min-width: 190px; }
+        nav ul li ul li a {
+          padding: 15px;
+          line-height: 20px;
+          z-index: 1; }
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1; }
+  .nav-dropdown li a {
+    color: white;
+    text-transform: none; }
+
+@media only screen and (min-width: 992px) {
+  nav ul li {
+    position: static; }
+    nav ul li .nav-dropdown {
+      width: 100%;
+      top: 105px; } }
+@media only screen and (max-width: 992px) {
+  .nav-list {
+    width: 270px;
+    background-color: white;
+    position: absolute;
+    top: 105px;
+    right: 0; }
+    .nav-list li {
+      border-bottom: solid 1px #c5c5c8; }
+      .nav-list li a {
+        font-size: 18px;
+        margin: 0; }
+      .nav-list li .btn-signin, .nav-list li .btn-cart {
+        border: none;
+        padding: 15px;
+        background-color: #bcbdc0;
+        color: white; }
+    .nav-list .nav-dropdown {
+      background-color: #004c9a; } }
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 105px;
+  width: 105px; }
+
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px; }
+  #nav-toggle span,
+  #nav-toggle span:before,
+  #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: black;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out; }
+  #nav-toggle span:before {
+    top: -10px; }
+  #nav-toggle span:after {
+    bottom: -10px; }
+  #nav-toggle.active span {
+    background-color: transparent; }
+    #nav-toggle.active span:before, #nav-toggle.active span:after {
+      top: 0; }
+    #nav-toggle.active span:before {
+      transform: rotate(45deg); }
+    #nav-toggle.active span:after {
+      transform: rotate(-45deg); }
+
+@media only screen and (max-width: 992px) {
+  .nav-mobile {
+    display: block; }
+
+  nav {
+    width: 100%;
+    padding: 105px 0 15px; }
+    nav ul {
+      display: none; }
+      nav ul li {
+        float: none; }
+        nav ul li a {
+          padding: 15px;
+          line-height: 20px; }
+        nav ul li ul li a {
+          padding-left: 30px; }
+
+  .nav-dropdown {
+    position: static; } }
+@media screen and (min-width: 992px) {
+  .nav-list {
+    display: block !important; } }
+.navigation {
+  height: 105px; }
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 105px;
+  text-transform: uppercase;
+  font-size: 1.4em; }
+  .brand a,
+  .brand a:visited {
+    color: black;
+    text-decoration: none; }
+
 .font-lato {
   font-family: 'Lato', helvetica, sans-serif;
   font-weight: normal;
@@ -9,7 +153,7 @@
   font-weight: bold;
   font-style: normal; }
 
-.font-gotham-book {
+.font-gotham-book, nav ul {
   font-family: 'Gotham Book', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal; }
@@ -19,12 +163,12 @@
   font-weight: normal;
   font-style: italic; }
 
-.font-gotham-medium-italic {
+.font-gotham-medium-italic, .nav-dropdown li a {
   font-family: 'Gotham', helvetica, sans-serif;
   font-weight: 500;
   font-style: italic; }
 
-.font-gotham-medium {
+.font-gotham-medium, nav ul li a:hover {
   font-family: 'Gotham', helvetica, sans-serif;
   font-weight: 500;
   font-style: normal; }
@@ -32,12 +176,13 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: arial, helvetica, sans-serif;
+  font-family: 'Gotham Book', helvetica, sans-serif;
   font-size: 16px; }
 
 div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  list-style: none; }
 
 * {
   box-sizing: border-box;
@@ -60,5 +205,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     .container {
       width: 100%;
       padding: 0 5px; } }
+
+header {
+  border-bottom: solid 55px #004376; }
 
 /*# sourceMappingURL=main.css.map */

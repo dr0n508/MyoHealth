@@ -1,4 +1,5 @@
 @import "../fonts/fonts.css";
+@import "nav.scss";
 
 .font-lato {
   font-family: 'Lato', helvetica, sans-serif;
@@ -38,13 +39,14 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: arial, helvetica, sans-serif;
+  font-family: 'Gotham Book', helvetica, sans-serif;
   font-size: 16px;
 }
 
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 * {
@@ -70,3 +72,9 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     padding: 0 5px;
   }
 }
+
+header {
+  border-bottom: solid 55px #004376;
+}
+
+
