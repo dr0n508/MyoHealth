@@ -1,4 +1,16 @@
 @import url(../fonts/fonts.css);
+.navigation {
+  height: 105px;
+  border-bottom: solid 10px #b2d234; }
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 105px; }
+  .brand img {
+    line-height: 105px; }
+
 nav {
   float: right;
   display: flex;
@@ -8,8 +20,7 @@ nav {
     margin: 0;
     padding: 0; }
     nav ul li {
-      float: left;
-      position: relative; }
+      float: left; }
       nav ul li a {
         font-size: 14px;
         text-transform: uppercase;
@@ -42,31 +53,6 @@ nav {
     color: white;
     text-transform: none; }
 
-@media only screen and (min-width: 992px) {
-  nav ul li {
-    position: static; }
-    nav ul li .nav-dropdown {
-      width: 100%;
-      top: 105px; } }
-@media only screen and (max-width: 992px) {
-  .nav-list {
-    width: 270px;
-    background-color: white;
-    position: absolute;
-    top: 105px;
-    right: 0; }
-    .nav-list li {
-      border-bottom: solid 1px #c5c5c8; }
-      .nav-list li a {
-        font-size: 18px;
-        margin: 0; }
-      .nav-list li .btn-signin, .nav-list li .btn-cart {
-        border: none;
-        padding: 15px;
-        background-color: #bcbdc0;
-        color: white; }
-    .nav-list .nav-dropdown {
-      background-color: #004c9a; } }
 .nav-mobile {
   display: none;
   position: absolute;
@@ -77,26 +63,24 @@ nav {
 
 #nav-toggle {
   position: absolute;
-  left: 18px;
-  top: 22px;
   cursor: pointer;
-  padding: 10px 35px 16px 0px; }
+  padding: 42px 32px; }
   #nav-toggle span,
   #nav-toggle span:before,
   #nav-toggle span:after {
     cursor: pointer;
     border-radius: 1px;
-    height: 5px;
-    width: 35px;
-    background: black;
+    height: 8px;
+    width: 45px;
+    background: #d1d2d4;
     position: absolute;
     display: block;
     content: '';
     transition: all 300ms ease-in-out; }
   #nav-toggle span:before {
-    top: -10px; }
+    top: -13px; }
   #nav-toggle span:after {
-    bottom: -10px; }
+    bottom: -13px; }
   #nav-toggle.active span {
     background-color: transparent; }
     #nav-toggle.active span:before, #nav-toggle.active span:after {
@@ -106,6 +90,13 @@ nav {
     #nav-toggle.active span:after {
       transform: rotate(-45deg); }
 
+@media only screen and (min-width: 992px) {
+  nav ul li .nav-dropdown {
+    width: 100%;
+    top: 105px; }
+
+  .nav-list {
+    display: block !important; } }
 @media only screen and (max-width: 992px) {
   .nav-mobile {
     display: block; }
@@ -123,26 +114,25 @@ nav {
         nav ul li ul li a {
           padding-left: 30px; }
 
-  .nav-dropdown {
-    position: static; } }
-@media screen and (min-width: 992px) {
   .nav-list {
-    display: block !important; } }
-.navigation {
-  height: 105px; }
-
-.brand {
-  position: absolute;
-  padding-left: 20px;
-  float: left;
-  line-height: 105px;
-  text-transform: uppercase;
-  font-size: 1.4em; }
-  .brand a,
-  .brand a:visited {
-    color: black;
-    text-decoration: none; }
-
+    width: 270px;
+    background-color: white;
+    position: absolute;
+    top: 105px;
+    right: 0; }
+    .nav-list li {
+      border-bottom: solid 1px #c5c5c8; }
+      .nav-list li a {
+        font-size: 18px;
+        margin: 0; }
+      .nav-list li .btn-signin, .nav-list li .btn-cart {
+        border: none;
+        padding: 15px;
+        background-color: #bcbdc0;
+        color: white; }
+    .nav-list .nav-dropdown {
+      position: static;
+      background-color: #004c9a; } }
 .font-lato {
   font-family: 'Lato', helvetica, sans-serif;
   font-weight: normal;

@@ -1,9 +1,23 @@
 $content-width: 1000px;
 $breakpoint: 992px;
 $nav-height: 105px;
-$nav-background: #262626;
 $nav-font-color: black;
 $link-hover-color: #2581DC;
+
+.navigation {
+  height: $nav-height;
+  border-bottom: solid 10px #b2d234;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: $nav-height;
+  img {
+    line-height: $nav-height;
+  }
+}
 
 nav {
   float: right;
@@ -12,12 +26,11 @@ nav {
   height: $nav-height;
   ul {
     @extend .font-gotham-book;
-    //list-style: none;
     margin: 0;
     padding: 0;
     li {
       float: left;
-      position: relative;
+      //position: relative;
       a {
         font-size: 14px;
         text-transform: uppercase;
@@ -53,12 +66,6 @@ nav {
   }
 }
 
-.nav-list {
-  //display: flex;
-  //align-items: center;
-
-}
-
 .nav-dropdown {
   position: absolute;
   display: none;
@@ -68,44 +75,6 @@ nav {
     color: white;
     text-transform: none;
     @extend .font-gotham-medium-italic;
-  }
-}
-
-@media only screen and (min-width: $breakpoint) {
-  nav ul li {
-    position: static;
-    .nav-dropdown {
-      width: 100%;
-      top: $nav-height;
-    }
-  }
-
-}
-
-@media only screen and (max-width: $breakpoint) {
-  .nav-list {
-    width: 270px;
-    background-color: white;
-    position: absolute;
-    top: $nav-height;
-    right: 0;
-    li {
-      a {
-        font-size: 18px;
-        margin: 0;
-      }
-      border-bottom: solid 1px #c5c5c8;
-      .btn-signin, .btn-cart {
-        border: none;
-        padding: 15px;
-        background-color: #bcbdc0;
-        color: white;
-
-      }
-    }
-    .nav-dropdown {
-      background-color: #004c9a;
-    }
   }
 }
 
@@ -120,28 +89,29 @@ nav {
 
 #nav-toggle {
   position: absolute;
-  left: 18px;
-  top: 22px;
+  //left: 18px;
+  //top: 22px;
   cursor: pointer;
-  padding: 10px 35px 16px 0px;
+  //padding: 10px 35px 16px 0px;
+  padding: 42px 32px;
   span,
   span:before,
   span:after {
     cursor: pointer;
     border-radius: 1px;
-    height: 5px;
-    width: 35px;
-    background: $nav-font-color;
+    height: 8px;
+    width: 45px;
+    background: #d1d2d4;
     position: absolute;
     display: block;
     content: '';
     transition: all 300ms ease-in-out;
   }
   span:before {
-    top: -10px;
+    top: -13px;
   }
   span:after {
-    bottom: -10px;
+    bottom: -13px;
   }
   &.active span {
     background-color: transparent;
@@ -155,6 +125,20 @@ nav {
     &:after {
       transform: rotate(-45deg);
     }
+  }
+}
+
+
+@media only screen and (min-width: $breakpoint) {
+  nav ul li {
+    //position: static;
+    .nav-dropdown {
+      width: 100%;
+      top: $nav-height;
+    }
+  }
+  .nav-list {
+    display: block !important;
   }
 }
 
@@ -179,33 +163,31 @@ nav {
       }
     }
   }
-
-  .nav-dropdown {
-    position: static;
-  }
-}
-
-@media screen and (min-width: $breakpoint) {
   .nav-list {
-    display: block !important;
-
+    width: 270px;
+    background-color: white;
+    position: absolute;
+    top: $nav-height;
+    right: 0;
+    li {
+      a {
+        font-size: 18px;
+        margin: 0;
+      }
+      border-bottom: solid 1px #c5c5c8;
+      .btn-signin, .btn-cart {
+        border: none;
+        padding: 15px;
+        background-color: #bcbdc0;
+        color: white;
+      }
+    }
+    .nav-dropdown {
+      position: static;
+      background-color: #004c9a;
+    }
   }
 }
 
-.navigation {
-  height: $nav-height;
-}
 
-.brand {
-  position: absolute;
-  padding-left: 20px;
-  float: left;
-  line-height: $nav-height;
-  text-transform: uppercase;
-  font-size: 1.4em;
-  a,
-  a:visited {
-    color: $nav-font-color;
-    text-decoration: none;
-  }
-}
+
