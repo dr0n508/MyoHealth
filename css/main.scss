@@ -1,0 +1,72 @@
+@import "../fonts/fonts.css";
+
+.font-lato {
+  font-family: 'Lato', helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-gotham-bold {
+  font-family: 'Gotham', helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.font-gotham-book {
+  font-family: 'Gotham Book', helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.font-gotham-book-italic {
+  font-family: 'Gotham Book', helvetica, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.font-gotham-medium-italic {
+  font-family: 'Gotham', helvetica, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.font-gotham-medium {
+  font-family: 'Gotham', helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 16px;
+}
+
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  @media only screen and (min-width: 1200px) {
+    width: 1140px;
+  }
+  @media only screen and (max-width: 1200px) {
+    width: 970px;
+  }
+  @media only screen and (max-width: 992px) {
+    width: 750px;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0 5px;
+  }
+}
