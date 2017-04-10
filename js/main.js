@@ -16,3 +16,10 @@
         $('nav ul').toggle();
     });
 })(jQuery);
+
+
+$('.slider-first-page').bxSlider({
+    mode: 'fade',
+
+    // captions: true
+});

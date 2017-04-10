@@ -1,5 +1,6 @@
 @import "../fonts/fonts.css";
 @import "nav.scss";
+@import "_slider.scss";
 
 .font-lato {
   font-family: 'Lato', helvetica, sans-serif;
@@ -77,4 +78,27 @@ header {
   border-bottom: solid 55px #004376;
 }
 
+
+.social-bar {
+  position: fixed;
+  z-index: 2;
+  right: 0px;
+  top: 150px;
+  background-color: #b2d234;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  .twitter-link, .facebook-link, .youtube-link {
+    width: 50px;
+    height: 50px;
+    display: block;
+  }
+  .twitter-link {
+    background: url("../img/icon-tritter.png") no-repeat 50% 50%;
+  }
+  .facebook-link {
+    background: url("../img/icon-facebook.png") no-repeat 50% 50%;
+  }
+  .youtube-link {
+    background: url("../img/icon-youtube.png") no-repeat 50% 50%;
+  }
+}
 

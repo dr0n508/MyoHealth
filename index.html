@@ -7,6 +7,7 @@
     <title>MyoHealth</title>
 
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/bxslider/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -58,15 +59,61 @@
                 </li>
             </ul>
         </nav>
+        <div class="block-form">
+            <div class="header-block">
+                <h4>Brought to you by:
+                    John & Jane sample
+                    <span>
+                    Independant TriVita
+                    Business Owner
+                </span>
+                </h4>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="Name:">
+                <input type="email" placeholder="Email:">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Message:"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </section>
 </header>
 
+<div class="social-bar">
+    <ul>
+        <li><a href="#" class="twitter-link"></a></li>
+        <li><a href="#" class="facebook-link"></a></li>
+        <li><a href="#" class="youtube-link"></a></li>
+    </ul>
+</div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi at debitis, dolores doloribus magnam quasi reiciendis saepe soluta totam. Consequuntur deleniti hic iure nam nesciunt odit praesentium totam vero.</p>
+<section class="slider">
+    <!--<div class="container">-->
+        <ul class="slider-first-page">
+            <li>
+                <img src="img/slider-photo.jpg" title="slider-photo" />
+                <div class="text-slide">
+                    <h2>LIVE STRONGER <span>AT ANY AGE</span></h2>
+                    <p>The Anti-Aging Essential Amino Acid Agent</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/slider-photo.jpg" title="slider-photo" />
+                <h2>CONTAINS ALL NINEESSENTIAL <span>AMINO ACIDS</span></h2>
+                <p>to help your body synthesize protein, increase musclestrength, function and decrease muscle loss.</p>
+            </li>
+            <li>
+                <img src="img/slider-photo.jpg" title="slider-photo" />
+                <h2>CLINICALLY PROVEN AMINOACID COMPLEX <span>SUPPORTS MUSCLE STRENGTH & FUNCTION</span></h2>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+</section>
 
 
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>
