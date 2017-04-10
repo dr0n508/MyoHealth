@@ -14,7 +14,7 @@
   }
   .bx-pager {
     position: absolute;
-    bottom: 100px;
+    bottom: 60px;
     .bx-pager-link {
       width: 15px;
       height: 15px;
@@ -33,6 +33,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 850px;
+    color: white;
+    h2 {
+      font-size: 46px;
+      @extend .font-gotham-bold;
+      text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.75);
+      span {
+        @extend .font-gotham-book;
+      }
+    }
+    p {
+      @extend .font-gotham-medium-italic;
+      font-size: 21px;
+      text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.75);
+
+    }
 
   }
 

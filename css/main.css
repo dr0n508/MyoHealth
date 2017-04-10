@@ -255,7 +255,7 @@ nav {
   height: auto; }
 .slider .bx-pager {
   position: absolute;
-  bottom: 100px; }
+  bottom: 60px; }
   .slider .bx-pager .bx-pager-link {
     width: 15px;
     height: 15px;
@@ -270,19 +270,26 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 850px; }
+  width: 850px;
+  color: white; }
+  .slider .text-slide h2 {
+    font-size: 46px;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.75); }
+  .slider .text-slide p {
+    font-size: 21px;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.75); }
 
 .font-lato, .block-form form input, .block-form form textarea {
   font-family: 'Lato', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal; }
 
-.font-gotham-bold, .block-form form button {
+.font-gotham-bold, .block-form form button, .slider .text-slide h2 {
   font-family: 'Gotham', helvetica, sans-serif;
   font-weight: bold;
   font-style: normal; }
 
-.font-gotham-book, nav ul {
+.font-gotham-book, nav ul, .slider .text-slide h2 span {
   font-family: 'Gotham Book', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal; }
@@ -292,7 +299,7 @@ nav {
   font-weight: normal;
   font-style: italic; }
 
-.font-gotham-medium-italic, .block-form .header-block h4 span, .nav-dropdown li a {
+.font-gotham-medium-italic, .block-form .header-block h4 span, .nav-dropdown li a, .slider .text-slide p {
   font-family: 'Gotham', helvetica, sans-serif;
   font-weight: 500;
   font-style: italic; }
@@ -347,7 +354,7 @@ header {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); }
   .social-bar .twitter-link, .social-bar .facebook-link, .social-bar .youtube-link {
     width: 50px;
-    height: 50px;
+    height: 40px;
     display: block; }
   .social-bar .twitter-link {
     background: url("../img/icon-tritter.png") no-repeat 50% 50%; }
