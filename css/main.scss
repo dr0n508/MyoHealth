@@ -1,6 +1,8 @@
 @import "../fonts/fonts.css";
+@import "_grid.scss";
 @import "nav.scss";
 @import "_slider.scss";
+
 
 .font-lato {
   font-family: 'Lato', helvetica, sans-serif;
@@ -101,4 +103,14 @@ header {
     background: url("../img/icon-youtube.png") no-repeat 50% 50%;
   }
 }
+
+.ssss {
+  background: url("../img/bg-smart.jpg");
+  background-size: cover;
+}
+
+
+
+
+
 

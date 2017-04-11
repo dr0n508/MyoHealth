@@ -1,0 +1,39 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+[class*='col-'] {
+  float: left;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+.col-1-4 {
+  width: 25%;
+}
+.col-1-8 {
+  width: 12.5%;
+}
+
+[class*='col-'] {
+  padding-right: 20px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+@media all and ( max-width: 768px ) {
+  .col-1-2 { width: 100%}
+  .col-1-4 { width: 50% }
+}
+
