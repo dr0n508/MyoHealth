@@ -280,6 +280,9 @@ nav {
 
   #nav-toggle {
     padding: 35px 32px; } }
+.bx-wrapper {
+  margin: 0 auto; }
+
 .slider .bx-viewport {
   left: 0;
   border: 0;
@@ -318,17 +321,17 @@ nav {
   font-weight: normal;
   font-style: normal; }
 
-.font-gotham-bold, .block-form form button, .slider .text-slide h2 {
+.font-gotham-bold, .block-form form button, .slider .text-slide h2, .wrap-description .title, .arrow-button {
   font-family: 'Gotham', helvetica, sans-serif;
   font-weight: bold;
   font-style: normal; }
 
-.font-gotham-book, nav ul, .slider .text-slide h2 span {
+.font-gotham-book, nav ul, .slider .text-slide h2 span, .wrap-description .sub-title {
   font-family: 'Gotham Book', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal; }
 
-.font-gotham-book-italic {
+.font-gotham-book-italic, .wrap-description .text-desctiption {
   font-family: 'Gotham Book', helvetica, sans-serif;
   font-weight: normal;
   font-style: italic; }
@@ -397,8 +400,46 @@ header {
   .social-bar .youtube-link {
     background: url("../img/icon-youtube.png") no-repeat 50% 50%; }
 
-.ssss {
+.description-product {
   background: url("../img/bg-smart.jpg");
-  background-size: cover; }
+  background-size: cover;
+  padding: 60px 0; }
+
+.compose-img {
+  text-align: center;
+  position: relative; }
+
+.wrap-description {
+  color: #004c9a; }
+  .wrap-description .title {
+    font-size: 36px; }
+  .wrap-description .sub-title {
+    font-size: 36px;
+    margin-bottom: 60px; }
+  .wrap-description .text-desctiption {
+    font-size: 21px;
+    margin-bottom: 60px; }
+
+.arrow-button {
+  line-height: 50px;
+  color: white;
+  background-color: #00aeef;
+  position: relative;
+  height: 50px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 18px; }
+  .arrow-button:after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 0;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 15px;
+    border-color: transparent transparent transparent #00afef; }
 
 /*# sourceMappingURL=main.css.map */
