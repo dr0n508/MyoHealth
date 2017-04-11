@@ -39,17 +39,22 @@
   box-sizing: content-box;
   position: relative; }
 
+.block-form.open {
+  background-color: white; }
+  .block-form.open form {
+    display: block; }
+
 .block-form {
+  cursor: pointer;
   position: absolute;
   z-index: 2;
   width: 250px;
-  background-color: white;
+  background-color: transparent;
   padding-bottom: 10px;
   color: #005da4;
   top: 115px;
   left: 35px;
-  text-align: center;
-  border: solid 1px darkblue; }
+  text-align: center; }
   .block-form .header-block {
     position: relative;
     padding: 10px 30px;
@@ -82,6 +87,7 @@
       border-width: 60px 125px 0 125px;
       border-color: #e7e7e8 transparent transparent transparent; }
   .block-form form {
+    display: none;
     padding: 15px; }
     .block-form form input, .block-form form textarea {
       border: solid 1px #dfdfe0;
@@ -224,6 +230,11 @@ nav {
 
   .nav-list {
     display: block !important; } }
+.blue-line-header {
+  background-color: #004376;
+  overflow: hidden;
+  display: block; }
+
 @media only screen and (max-width: 992px) {
   nav ul li ul li {
     min-width: 190px; }
@@ -254,7 +265,8 @@ nav {
     background-color: white;
     position: absolute;
     top: 110px;
-    right: 0; }
+    right: 0;
+    z-index: 1; }
     .nav-list li {
       border-bottom: solid 1px #c5c5c8; }
       .nav-list li a {
@@ -316,6 +328,14 @@ nav {
     font-size: 21px;
     text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.75); }
 
+.form-sign-in {
+  float: right; }
+  .form-sign-in input {
+    background-color: white;
+    font-size: 11px;
+    color: #98938f;
+    text-transform: uppercase; }
+
 .font-lato, .block-form form input, .block-form form textarea {
   font-family: 'Lato', helvetica, sans-serif;
   font-weight: normal;
@@ -326,7 +346,7 @@ nav {
   font-weight: bold;
   font-style: normal; }
 
-.font-gotham-book, nav ul, .slider .text-slide h2 span, .wrap-description .sub-title {
+.font-gotham-book, nav ul, .slider .text-slide h2 span, .form-sign-in input, .wrap-description .sub-title {
   font-family: 'Gotham Book', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal; }
@@ -379,9 +399,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       width: 100%;
       padding: 0 5px; } }
 
-header {
-  border-bottom: solid 55px #004376; }
-
 .social-bar {
   position: fixed;
   z-index: 2;
@@ -389,6 +406,8 @@ header {
   top: 150px;
   background-color: #b2d234;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); }
+  .social-bar ul {
+    padding: 5px 0; }
   .social-bar .twitter-link, .social-bar .facebook-link, .social-bar .youtube-link {
     width: 50px;
     height: 40px;

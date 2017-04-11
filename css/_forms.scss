@@ -1,0 +1,10 @@
+.form-sign-in {
+  float: right;
+  input {
+    @extend .font-gotham-book;
+    background-color: white;
+    font-size: 11px;
+    color: #98938f;
+    text-transform: uppercase;
+  }
+}

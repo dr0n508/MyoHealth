@@ -15,6 +15,12 @@
     $('#nav-toggle').click(function() {
         $('nav ul').toggle();
     });
+
+    $('.block-form .header-block').click(function () {
+        $('.block-form').toggleClass('open');
+    })
+
+
 })(jQuery);
 
 
