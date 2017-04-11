@@ -19,12 +19,12 @@ $link-hover-color: #2581DC;
 .block-form {
   cursor: pointer;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   width: 250px;
   background-color: transparent;
   padding-bottom: 10px;
   color: #005da4;
-  top: 115px;
+  top: 0px;
   left: 35px;
   text-align: center;
   //border: solid 1px darkblue;
@@ -80,33 +80,7 @@ $link-hover-color: #2581DC;
       &:-moz-placeholder           {color:#cfcccb; text-transform: uppercase}/* Firefox 18- */
       &:-ms-input-placeholder      {color:#cfcccb; text-transform: uppercase}
     }
-    button {
-      @extend .font-gotham-bold;
-      font-size: 11px;
-      margin-right: 8px;
-      background-color: #b2d234;
-      color: white;
-      text-transform: uppercase;
-      float: right;
-      border: none;
-      outline: none;
-      height: 30px;
-      position: relative;
-      &:after {
-        position: absolute;
-        content: "";
-        right: -8px;
-        top:0;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 15px 0 15px 8px;
-        border-color: transparent transparent transparent #b2d234;
-      }
-    }
-
   }
-
 }
 
 

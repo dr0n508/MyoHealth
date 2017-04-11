@@ -21,6 +21,16 @@
     })
 
 
+
+    $('.link-sub-menu').click(function () {
+        $('.sub-menu').toggle();
+    });
+
+    $('#signIn').click(function () {
+        $('.form-sign-in').toggle();
+    })
+
+
 })(jQuery);
 
 
