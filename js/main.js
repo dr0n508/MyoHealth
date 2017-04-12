@@ -49,6 +49,9 @@
     });
 
     $(window).resize(function() {
+        console.log('dddddd');
+        $('.block-form').removeClass('open');
+        // $('.form-sign-in').hide();
         if ($(window).width() >= '992'){
             $('nav').show();
             return this;
