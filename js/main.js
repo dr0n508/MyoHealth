@@ -50,7 +50,6 @@
 
 
 $('.slider-first-page').bxSlider({
-    mode: 'fade',
-
-    // captions: true
+    video: true,
+    useCSS: false
 });

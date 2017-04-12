@@ -208,11 +208,11 @@ header .bottom-header {
       display: flex; }
     header .bottom-header .social-bar .twitter-link, header .bottom-header .social-bar .youtube-link {
       width: 30px;
-      height: 20px;
+      height: 30px;
       background-size: 50%; }
     header .bottom-header .social-bar .facebook-link {
       width: 30px;
-      height: 20px;
+      height: 30px;
       background-size: 35%; } }
 .bx-wrapper {
   margin: 0 auto; }
@@ -224,6 +224,8 @@ header .bottom-header {
 .slider .slider-first-page img {
   width: 100%;
   height: auto; }
+.slider .slider-first-page li {
+  overflow: hidden; }
 .slider .bx-pager {
   position: absolute;
   bottom: 60px; }
@@ -242,6 +244,7 @@ header .bottom-header {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 850px;
+  max-width: 100%;
   color: white; }
   .slider .text-slide h2 {
     font-size: 46px;
@@ -249,6 +252,12 @@ header .bottom-header {
   .slider .text-slide p {
     font-size: 21px;
     text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.75); }
+@media only screen and (max-width: 992px) {
+  .slider .text-slide h2 {
+    font-size: 41px; } }
+@media only screen and (max-width: 768px) {
+  .slider .text-slide h2 {
+    font-size: 26px; } }
 
 .form-sign-in {
   float: right;
@@ -510,7 +519,5 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   .wrap-description .text-desctiption {
     font-size: 21px;
     margin-bottom: 60px; }
-
-/************************/
 
 /*# sourceMappingURL=main.css.map */
