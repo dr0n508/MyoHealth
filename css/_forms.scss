@@ -35,6 +35,9 @@
 
 .block-form.open {
   background-color: white;
+  .header-block:before {
+    display: block;
+  }
   form {
     display: block;
   }
@@ -79,6 +82,7 @@
     }
     &:before {
       position: absolute;
+      display: none;
       content: "";
       bottom: -60px;
       left: 0;

@@ -205,7 +205,15 @@ header .bottom-header {
     background: none;
     box-shadow: none; }
     header .bottom-header .social-bar ul {
-      display: flex; } }
+      display: flex; }
+    header .bottom-header .social-bar .twitter-link, header .bottom-header .social-bar .youtube-link {
+      width: 30px;
+      height: 20px;
+      background-size: 50%; }
+    header .bottom-header .social-bar .facebook-link {
+      width: 30px;
+      height: 20px;
+      background-size: 35%; } }
 .bx-wrapper {
   margin: 0 auto; }
 
@@ -271,6 +279,8 @@ header .bottom-header {
 
 .block-form.open {
   background-color: white; }
+  .block-form.open .header-block:before {
+    display: block; }
   .block-form.open form {
     display: block; }
 
@@ -308,6 +318,7 @@ header .bottom-header {
       border-color: #b2d234 transparent transparent transparent; }
     .block-form .header-block:before {
       position: absolute;
+      display: none;
       content: "";
       bottom: -60px;
       left: 0;

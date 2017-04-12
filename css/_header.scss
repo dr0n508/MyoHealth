@@ -237,8 +237,15 @@ header .bottom-header {
         ul {
           display: flex;
         }
-        .twitter-link, .facebook-link, .youtube-link {
-          //display: inline-block;
+        .twitter-link, .youtube-link {
+          width: 30px;
+          height: 20px;
+          background-size: 50%;
+        }
+        .facebook-link {
+          width: 30px;
+          height: 20px;
+          background-size: 35%;
         }
       }
     }
