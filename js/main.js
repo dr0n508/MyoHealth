@@ -28,7 +28,21 @@
     // });
 
     $('#signIn').click(function () {
-        $('.form-sign-in').toggle();
+
+            if ($(window).width() <= '992' && $(window).width() >= '768') {
+                $('nav').hide();
+                $('.form-sign-in').toggle();
+            }
+             else if ($(window).width() <= '768'){
+                $('.form-sign-in').toggleClass('mobile-form-signin');
+                $('.block-form').toggle();
+                $('.social-bar').toggle();
+                $('nav').hide();
+            } else {
+                console.log('des');
+                $('.form-sign-in').toggle();
+            }
+
     })
 
 

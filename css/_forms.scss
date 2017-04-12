@@ -17,6 +17,22 @@
   }
 }
 
+.form-sign-in.mobile-form-signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  input {
+    width: 33%;
+    margin: 2px;
+  }
+  .btn-submit {
+    margin: 2px 15px 2px 2px;
+    width: 33%;
+  }
+}
+
 .block-form.open {
   background-color: white;
   form {
@@ -99,6 +115,9 @@
       }
       &:before {
         border-width: 60px 95px 0 95px;
+      }
+      h4 {
+        font-size: 14px;
       }
     }
   }

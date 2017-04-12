@@ -257,6 +257,18 @@ header .bottom-header {
   .form-sign-in .btn-submit {
     margin: 0 110px 0 20px; }
 
+.form-sign-in.mobile-form-signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+  .form-sign-in.mobile-form-signin input {
+    width: 33%;
+    margin: 2px; }
+  .form-sign-in.mobile-form-signin .btn-submit {
+    margin: 2px 15px 2px 2px;
+    width: 33%; }
+
 .block-form.open {
   background-color: white; }
   .block-form.open form {
@@ -336,7 +348,9 @@ header .bottom-header {
         .block-form .header-block:after {
           border-width: 40px 95px 0 95px; }
         .block-form .header-block:before {
-          border-width: 60px 95px 0 95px; } }
+          border-width: 60px 95px 0 95px; }
+        .block-form .header-block h4 {
+          font-size: 14px; } }
 
 .btn-submit {
   cursor: pointer;
