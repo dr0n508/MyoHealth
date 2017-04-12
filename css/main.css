@@ -198,7 +198,17 @@ header .bottom-header {
               font-size: 14px;
               background-color: #005da4;
               border: none;
-              padding: 15px; } }
+              padding: 15px; }
+
+  #nav-toggle span,
+  #nav-toggle span:before,
+  #nav-toggle span:after {
+    height: 5px;
+    width: 30px; }
+  #nav-toggle span:before {
+    top: 10px; }
+  #nav-toggle span:after {
+    bottom: 10px; } }
 @media only screen and (max-width: 768px) {
   header .top-header {
     height: 75px; }
@@ -209,6 +219,10 @@ header .bottom-header {
         height: auto; }
     header .top-header nav {
       top: 75px; }
+      header .top-header nav ul li a {
+        font-size: 11px; }
+      header .top-header nav ul li .sub-menu li a {
+        font-size: 11px; }
   header .bottom-header .social-bar {
     position: static;
     background: none;
