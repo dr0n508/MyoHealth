@@ -330,10 +330,22 @@ header .bottom-header {
     background-color: #b2d234; }
     .block-form .header-block h4 {
       text-transform: uppercase;
-      font-size: 16px; }
+      font-size: 16px;
+      position: relative; }
       .block-form .header-block h4 span {
         font-size: 14px;
         text-transform: none; }
+      .block-form .header-block h4:after {
+        content: "";
+        position: absolute;
+        bottom: -35px;
+        right: 50%;
+        margin-right: -10.5px;
+        width: 21px;
+        height: 33px;
+        display: block;
+        background: url("../img/icon-i.png") 50% 50% no-repeat;
+        z-index: 1; }
     .block-form .header-block:after {
       position: absolute;
       content: "";
