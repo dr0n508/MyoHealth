@@ -53,3 +53,8 @@ $('.slider-first-page').bxSlider({
     video: true,
     useCSS: false
 });
+
+$('.bxslider').bxSlider({
+    video: true,
+    useCSS: false
+});
