@@ -1,9 +1,10 @@
 @import "../fonts/fonts.css";
 @import "_grid.scss";
 @import "_header.scss";
-@import "nav.scss";
 @import "_slider.scss";
 @import "_forms.scss";
+@import "_buttons.scss";
+
 
 
 .font-lato {
@@ -78,11 +79,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   }
 }
 
-header {
-  //border-bottom: solid 55px #004376;
-}
-
-
 .social-bar {
   position: fixed;
   z-index: 2;
@@ -143,61 +139,14 @@ header {
 
 
 
-.arrow-button {
-  @extend .font-gotham-bold;
-  line-height: 50px;
-  color: white;
-  background-color: #00aeef;
-  position: relative;
-  height: 50px;
-  display: inline-block;
-  text-decoration: none;
-  padding: 0 15px;
-  font-size: 18px;
-  &:after {
-    content: "";
-    position: absolute;
-    right: -15px;
-    top:0;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 25px 0 25px 15px;
-    border-color: transparent transparent transparent #00afef;
-  }
-}
+
 
 /************************/
 
 
 
 
-.btn-submit {
-  cursor: pointer;
-  @extend .font-gotham-bold;
-  font-size: 11px;
-  margin-right: 8px;
-  background-color: #b2d234;
-  color: white;
-  text-transform: uppercase;
-  float: right;
-  border: none;
-  outline: none;
-  height: 30px;
-  position: relative;
-  &:after {
-    position: absolute;
-    content: "";
-    right: -8px;
-    top:0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 15px 0 15px 8px;
-    border-color: transparent transparent transparent #b2d234;
-  }
-}
+
 
 
 

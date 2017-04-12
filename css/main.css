@@ -45,37 +45,37 @@
   .top-header .mobile-button-menu {
     display: none;
     position: relative; }
-  .top-header .nav {
+  .top-header nav {
     display: block;
     z-index: 3; }
-    .top-header .nav ul {
+    .top-header nav ul {
       display: flex;
       align-items: center;
       justify-content: space-between; }
-      .top-header .nav ul li {
+      .top-header nav ul li {
         margin: 0 10px; }
-        .top-header .nav ul li a {
+        .top-header nav ul li a {
           font-size: 14px;
           padding: 10px;
           text-decoration: none;
           color: #847c78;
           text-transform: uppercase; }
-      .top-header .nav ul .link-with-border {
+      .top-header nav ul .link-with-border {
         border: solid 1px #847c78; }
-    .top-header .nav .sub-menu {
+    .top-header nav .sub-menu {
       display: none;
       position: absolute;
       bottom: -45px;
       width: 100%;
       left: 0;
       text-align: right; }
-      .top-header .nav .sub-menu li {
+      .top-header nav .sub-menu li {
         display: inline-block; }
-        .top-header .nav .sub-menu li a {
+        .top-header nav .sub-menu li a {
           color: white;
           text-transform: none; }
 
-.header .bottom-header {
+header .bottom-header {
   position: relative;
   display: flex;
   align-items: center;
@@ -84,8 +84,6 @@
   background-color: #004376; }
 
 #nav-toggle {
-  left: 18px;
-  top: 22px;
   cursor: pointer;
   padding: 48px 32px; }
   #nav-toggle span:before,
@@ -116,124 +114,46 @@
       transform: rotate(-45deg); }
 
 @media only screen and (max-width: 1200px) {
-  .top-header .nav ul li {
+  .top-header nav ul li {
     margin: 0px 5px; }
-    .top-header .nav ul li a {
+    .top-header nav ul li a {
       padding: 10px 5px; } }
 @media only screen and (max-width: 992px) {
-  .header .top-header .mobile-button-menu {
+  header .top-header .mobile-button-menu {
     display: block; }
-  .header .top-header .nav {
+  header .top-header nav {
     position: absolute;
     top: 100px;
     right: 0;
     width: 270px;
     background-color: white;
     display: none; }
-    .header .top-header .nav ul {
+    header .top-header nav ul {
       display: block; }
-      .header .top-header .nav ul li {
+      header .top-header nav ul li {
         width: 100%;
         margin: 0; }
-        .header .top-header .nav ul li:last-child a {
+        header .top-header nav ul li:last-child a {
           border: none; }
-        .header .top-header .nav ul li .sub-menu {
-          position: static;
-          text-align: left; }
-          .header .top-header .nav ul li .sub-menu li a {
-            color: white;
-            font-size: 14px;
-            background-color: #005da4;
-            border: none;
-            padding: 15px; }
-        .header .top-header .nav ul li a {
+        header .top-header nav ul li a {
           font-size: 18px;
           padding: 10px 15px;
           display: block;
           border-bottom: solid 1px #bcbdc0; }
-        .header .top-header .nav ul li .link-with-border {
+        header .top-header nav ul li .link-with-border {
           background-color: #bcbdc0;
           border: none;
           color: white;
-          border-bottom: solid 1px white; } }
-.nav-mobile {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 105px;
-  width: 105px; }
-
-@media only screen and (min-width: 992px) {
-  nav ul li .nav-dropdown {
-    width: 100%;
-    top: 115px;
-    left: 0; }
-
-  .nav-list {
-    display: block !important; } }
-.blue-line-header {
-  background-color: #004376;
-  overflow: hidden;
-  display: block; }
-
-@media only screen and (max-width: 992px) {
-  nav ul li ul li {
-    min-width: 190px; }
-
-  .brand {
-    height: 100px; }
-
-  .navigation {
-    height: 100px; }
-
-  .nav-mobile {
-    display: block; }
-
-  nav {
-    width: 100%; }
-    nav ul {
-      display: none; }
-      nav ul li {
-        float: none; }
-        nav ul li a {
-          padding: 15px;
-          line-height: 20px; }
-        nav ul li ul li a {
-          padding-left: 30px; }
-
-  .nav-list {
-    width: 270px;
-    background-color: white;
-    position: absolute;
-    top: 110px;
-    right: 0;
-    z-index: 1; }
-    .nav-list li {
-      border-bottom: solid 1px #c5c5c8; }
-      .nav-list li a {
-        font-size: 18px;
-        margin: 0; }
-      .nav-list li .btn-signin, .nav-list li .btn-cart {
-        border: none;
-        padding: 15px;
-        background-color: #bcbdc0;
-        color: white; }
-    .nav-list .nav-dropdown {
-      position: static;
-      background-color: #004c9a; } }
-@media only screen and (max-width: 768px) {
-  .brand {
-    height: 75px; }
-
-  .navigation {
-    height: 75px; }
-
-  .nav-list {
-    top: 85px; }
-
-  #nav-toggle {
-    padding: 35px 32px; } }
+          border-bottom: solid 1px white; }
+        header .top-header nav ul li .sub-menu {
+          position: static;
+          text-align: left; }
+          header .top-header nav ul li .sub-menu li a {
+            color: white;
+            font-size: 14px;
+            background-color: #005da4;
+            border: none;
+            padding: 15px; } }
 .bx-wrapper {
   margin: 0 auto; }
 
@@ -271,7 +191,8 @@
     text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.75); }
 
 .form-sign-in {
-  float: right; }
+  float: right;
+  display: none; }
   .form-sign-in input {
     background-color: white;
     font-size: 11px;
@@ -355,12 +276,57 @@
         color: #cfcccb;
         text-transform: uppercase; }
 
+.btn-submit {
+  cursor: pointer;
+  font-size: 11px;
+  margin-right: 8px;
+  background-color: #b2d234;
+  color: white;
+  text-transform: uppercase;
+  float: right;
+  border: none;
+  outline: none;
+  height: 30px;
+  position: relative; }
+  .btn-submit:after {
+    position: absolute;
+    content: "";
+    right: -8px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 8px;
+    border-color: transparent transparent transparent #b2d234; }
+
+.arrow-button {
+  line-height: 50px;
+  color: white;
+  background-color: #00aeef;
+  position: relative;
+  height: 50px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 18px; }
+  .arrow-button:after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 0;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 15px;
+    border-color: transparent transparent transparent #00afef; }
+
 .font-lato, .block-form form input, .block-form form textarea {
   font-family: 'Lato', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal; }
 
-.font-gotham-bold, .slider .text-slide h2, .wrap-description .title, .arrow-button, .btn-submit {
+.font-gotham-bold, .slider .text-slide h2, .btn-submit, .arrow-button, .wrap-description .title {
   font-family: 'Gotham', helvetica, sans-serif;
   font-weight: bold;
   font-style: normal; }
@@ -375,7 +341,7 @@
   font-weight: normal;
   font-style: italic; }
 
-.font-gotham-medium-italic, .top-header .nav .sub-menu li a, .slider .text-slide p, .block-form .header-block h4 span {
+.font-gotham-medium-italic, .top-header nav .sub-menu li a, .slider .text-slide p, .block-form .header-block h4 span {
   font-family: 'Gotham', helvetica, sans-serif;
   font-weight: 500;
   font-style: italic; }
@@ -458,50 +424,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     font-size: 21px;
     margin-bottom: 60px; }
 
-.arrow-button {
-  line-height: 50px;
-  color: white;
-  background-color: #00aeef;
-  position: relative;
-  height: 50px;
-  display: inline-block;
-  text-decoration: none;
-  padding: 0 15px;
-  font-size: 18px; }
-  .arrow-button:after {
-    content: "";
-    position: absolute;
-    right: -15px;
-    top: 0;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 25px 0 25px 15px;
-    border-color: transparent transparent transparent #00afef; }
-
 /************************/
-.btn-submit {
-  cursor: pointer;
-  font-size: 11px;
-  margin-right: 8px;
-  background-color: #b2d234;
-  color: white;
-  text-transform: uppercase;
-  float: right;
-  border: none;
-  outline: none;
-  height: 30px;
-  position: relative; }
-  .btn-submit:after {
-    position: absolute;
-    content: "";
-    right: -8px;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 15px 0 15px 8px;
-    border-color: transparent transparent transparent #b2d234; }
 
 /*# sourceMappingURL=main.css.map */

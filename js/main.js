@@ -1,6 +1,6 @@
 (function($) {
     $(function() {
-        $('.nav ul li > a:not(:only-child)').click(function(e) {
+        $('nav ul li > a:not(:only-child)').click(function(e) {
             $(this).siblings('.sub-menu').toggle();
             $('.sub-menu').not($(this).siblings()).hide();
             e.stopPropagation();
@@ -13,7 +13,7 @@
         this.classList.toggle('active');
     });
     $('#nav-toggle').click(function() {
-        $('.nav').toggle();
+        $('nav').toggle();
     });
 
     $('.block-form .header-block').click(function () {
