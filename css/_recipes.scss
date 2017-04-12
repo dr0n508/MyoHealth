@@ -4,3 +4,37 @@
   background-size: cover;
   overflow: hidden;
 }
+
+.list-recipes {
+  li {
+    width: 33.33%;
+    float: left;
+    padding: 0 30px;
+    margin-bottom: 45px;
+    a {
+      height: 356px;
+      display: block;
+      position: relative;
+    }
+    h2 {
+      @extend .font-gotham-medium;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      font-size: 21px;
+      text-align: center;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      background-color: #b2d234;
+    }
+  }
+  .recipe1 a {
+    background: url("../img/graphical-nav/503207881_BW.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    &:hover {
+      background: url("../img/graphical-nav/503207881.jpg") no-repeat 50% 50%;
+      background-size: cover;
+    }
+  }
+}
