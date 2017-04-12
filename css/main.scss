@@ -175,6 +175,21 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   }
 }
 
+.video-section {
+  position: relative;
+}
+
+.button-play-video {
+  content: "";
+  position: absolute;
+  background: url("../img/video-play-icon.png") 50% 50% no-repeat;
+  width: 121px;
+  height: 121px;
+  margin-top: -60px;
+  margin-right: -60px;
+  top: 50%;
+  right: 50%;
+}
 
 .videoWrapper {
   position: relative;
