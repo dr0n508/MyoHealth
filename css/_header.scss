@@ -114,7 +114,11 @@ header .bottom-header {
     }
   }
 }
-
+@media only screen and (min-width: 1200px) {
+  nav {
+    display: block;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .top-header {
     nav ul li {
@@ -210,21 +214,6 @@ header .bottom-header {
           }
         }
       }
-    }
-  }
-  #nav-toggle {
-    padding: 48px 20px;
-    span,
-    span:before,
-    span:after {
-      height: 5px;
-      width: 30px;
-    }
-    span:before {
-      top: 10px;
-    }
-    span:after {
-      bottom: 10px;
     }
   }
 }
