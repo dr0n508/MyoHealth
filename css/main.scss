@@ -221,18 +221,34 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   .link-products {
     background: url("../img/graphical-nav/469460902_BW.jpg") 50% 50% no-repeat;
     background-size: cover;
+    &:hover {
+      background: url("../img/graphical-nav/469460902.jpg") 50% 50% no-repeat;
+      background-size: cover;
+    }
   }
   .link-resources {
     background: url("../img/graphical-nav/503207881_BW.jpg") 50% 50% no-repeat;
     background-size: cover;
+    &:hover {
+      background: url("../img/graphical-nav/503207881.jpg") 50% 50% no-repeat;
+      background-size: cover;
+    }
   }
   .link-faq {
     background: url("../img/graphical-nav/515157804_BW.jpg") 50% 50% no-repeat;
     background-size: cover;
+    &:hover {
+      background: url("../img/graphical-nav/515157804.jpg") 50% 50% no-repeat;
+      background-size: cover;
+    }
   }
   .link-why-myohealth {
     background: url("../img/graphical-nav/519159798_BW.jpg") 50% 50% no-repeat;
     background-size: cover;
+    &:hover {
+      background: url("../img/graphical-nav/519159798_BW.jpg") 50% 50% no-repeat;
+      background-size: cover;
+    }
   }
   @media only screen and (max-width: 992px) {
     a {
