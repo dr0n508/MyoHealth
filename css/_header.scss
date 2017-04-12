@@ -229,5 +229,18 @@ header .bottom-header {
         top: 75px;
       }
     }
+    .bottom-header {
+      .social-bar {
+        position: static;
+        background: none;
+        box-shadow: none;
+        ul {
+          display: flex;
+        }
+        .twitter-link, .facebook-link, .youtube-link {
+          //display: inline-block;
+        }
+      }
+    }
   }
 }

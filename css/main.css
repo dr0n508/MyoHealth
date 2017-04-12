@@ -199,7 +199,13 @@ header .bottom-header {
         width: 200px;
         height: auto; }
     header .top-header nav {
-      top: 75px; } }
+      top: 75px; }
+  header .bottom-header .social-bar {
+    position: static;
+    background: none;
+    box-shadow: none; }
+    header .bottom-header .social-bar ul {
+      display: flex; } }
 .bx-wrapper {
   margin: 0 auto; }
 
