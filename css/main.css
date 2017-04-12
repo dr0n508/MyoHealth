@@ -33,149 +33,64 @@
 
   .col-1-4 {
     width: 50%; } }
-.navigation {
-  height: 105px;
+.top-header {
+  height: 115px;
   border-bottom: solid 10px #b2d234;
-  box-sizing: content-box;
-  position: relative; }
-
-.block-form.open {
-  background-color: white; }
-  .block-form.open form {
-    display: block; }
-
-.block-form {
-  cursor: pointer;
-  position: absolute;
-  z-index: 3;
-  width: 250px;
-  background-color: transparent;
-  padding-bottom: 10px;
-  color: #005da4;
-  top: 0px;
-  left: 35px;
-  text-align: center; }
-  .block-form .header-block {
-    position: relative;
-    padding: 10px 30px;
-    margin-bottom: 50px;
-    background-color: #b2d234; }
-    .block-form .header-block h4 {
-      text-transform: uppercase;
-      font-size: 16px; }
-      .block-form .header-block h4 span {
-        font-size: 14px;
-        text-transform: none; }
-    .block-form .header-block:after {
-      position: absolute;
-      content: "";
-      bottom: -40px;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 40px 125px 0 125px;
-      border-color: #b2d234 transparent transparent transparent; }
-    .block-form .header-block:before {
-      position: absolute;
-      content: "";
-      bottom: -60px;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 60px 125px 0 125px;
-      border-color: #e7e7e8 transparent transparent transparent; }
-  .block-form form {
-    display: none;
-    padding: 15px; }
-    .block-form form input, .block-form form textarea {
-      border: solid 1px #dfdfe0;
-      padding: 10px;
-      width: 100%;
-      font-size: 11px;
-      margin-bottom: 10px;
-      /* Firefox 19+ */
-      /* Firefox 18- */ }
-      .block-form form input::-webkit-input-placeholder, .block-form form textarea::-webkit-input-placeholder {
-        color: #cfcccb;
-        text-transform: uppercase; }
-      .block-form form input::-moz-placeholder, .block-form form textarea::-moz-placeholder {
-        color: #cfcccb;
-        text-transform: uppercase; }
-      .block-form form input:-moz-placeholder, .block-form form textarea:-moz-placeholder {
-        color: #cfcccb;
-        text-transform: uppercase; }
-      .block-form form input:-ms-input-placeholder, .block-form form textarea:-ms-input-placeholder {
-        color: #cfcccb;
-        text-transform: uppercase; }
-
-.brand {
-  position: relative;
-  padding-left: 35px;
-  float: left;
-  height: 105px; }
-  .brand img {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); }
-
-nav {
-  float: right;
   display: flex;
   align-items: center;
-  height: 105px; }
-  nav ul {
-    margin: 0;
-    padding: 0; }
-    nav ul li {
-      float: left; }
-      nav ul li a {
-        font-size: 14px;
-        text-transform: uppercase;
-        color: #847c78;
-        display: block;
-        padding: 8px 10px;
-        margin: 0 15px;
-        text-decoration: none; }
-        nav ul li a:hover {
-          color: #004c9a;
-          border-color: #004c9a; }
-        nav ul li a:not(:only-child):after {
-          padding-left: 4px;
-          content: 'd'; }
-      nav ul li .btn-signin, nav ul li .btn-cart {
-        padding: 8px 10px;
-        border: solid 1px #a0a1a4; }
-      nav ul li ul li a {
-        padding: 15px;
-        line-height: 20px;
-        z-index: 1; }
+  justify-content: space-between;
+  position: relative; }
+  .top-header .logo {
+    margin-left: 40px; }
+  .top-header .mobile-button-menu {
+    display: none;
+    position: relative; }
+  .top-header .nav {
+    display: block;
+    z-index: 3; }
+    .top-header .nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .top-header .nav ul li {
+        margin: 0 10px; }
+        .top-header .nav ul li a {
+          font-size: 14px;
+          padding: 10px;
+          text-decoration: none;
+          color: #847c78;
+          text-transform: uppercase; }
+      .top-header .nav ul .link-with-border {
+        border: solid 1px #847c78; }
+    .top-header .nav .sub-menu {
+      display: none;
+      position: absolute;
+      bottom: -45px;
+      width: 100%;
+      left: 0;
+      text-align: right; }
+      .top-header .nav .sub-menu li {
+        display: inline-block; }
+        .top-header .nav .sub-menu li a {
+          color: white;
+          text-transform: none; }
 
-@media only screen and (max-width: 1200px) {
-  nav ul li a {
-    padding: 8px 4px;
-    margin: 0 6px; } }
-.nav-dropdown {
-  position: absolute;
-  display: none;
-  z-index: 1; }
-  .nav-dropdown li a {
-    color: white;
-    text-transform: none; }
-
-.nav-mobile {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 105px;
-  width: 105px; }
+.header .bottom-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 55px;
+  background-color: #004376; }
 
 #nav-toggle {
-  position: absolute;
+  left: 18px;
+  top: 22px;
   cursor: pointer;
   padding: 48px 32px; }
+  #nav-toggle span:before,
+  #nav-toggle span:after {
+    position: absolute; }
   #nav-toggle span,
   #nav-toggle span:before,
   #nav-toggle span:after {
@@ -184,22 +99,70 @@ nav {
     height: 8px;
     width: 45px;
     background: #d1d2d4;
-    position: absolute;
     display: block;
     content: '';
     transition: all 300ms ease-in-out; }
   #nav-toggle span:before {
-    top: -13px; }
+    top: 5px; }
   #nav-toggle span:after {
-    bottom: -13px; }
+    bottom: 5px; }
   #nav-toggle.active span {
     background-color: transparent; }
     #nav-toggle.active span:before, #nav-toggle.active span:after {
-      top: 0; }
+      top: 15px; }
     #nav-toggle.active span:before {
       transform: rotate(45deg); }
     #nav-toggle.active span:after {
       transform: rotate(-45deg); }
+
+@media only screen and (max-width: 1200px) {
+  .top-header .nav ul li {
+    margin: 0px 5px; }
+    .top-header .nav ul li a {
+      padding: 10px 5px; } }
+@media only screen and (max-width: 992px) {
+  .header .top-header .mobile-button-menu {
+    display: block; }
+  .header .top-header .nav {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 270px;
+    background-color: white;
+    display: none; }
+    .header .top-header .nav ul {
+      display: block; }
+      .header .top-header .nav ul li {
+        width: 100%;
+        margin: 0; }
+        .header .top-header .nav ul li:last-child a {
+          border: none; }
+        .header .top-header .nav ul li .sub-menu {
+          position: static;
+          text-align: left; }
+          .header .top-header .nav ul li .sub-menu li a {
+            color: white;
+            font-size: 14px;
+            background-color: #005da4;
+            border: none;
+            padding: 15px; }
+        .header .top-header .nav ul li a {
+          font-size: 18px;
+          padding: 10px 15px;
+          display: block;
+          border-bottom: solid 1px #bcbdc0; }
+        .header .top-header .nav ul li .link-with-border {
+          background-color: #bcbdc0;
+          border: none;
+          color: white;
+          border-bottom: solid 1px white; } }
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 105px;
+  width: 105px; }
 
 @media only screen and (min-width: 992px) {
   nav ul li .nav-dropdown {
@@ -321,6 +284,77 @@ nav {
   .form-sign-in .btn-submit {
     margin: 0 110px 0 20px; }
 
+.block-form.open {
+  background-color: white; }
+  .block-form.open form {
+    display: block; }
+
+.block-form {
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  width: 250px;
+  background-color: transparent;
+  padding-bottom: 10px;
+  color: #005da4;
+  top: 0px;
+  left: 35px;
+  text-align: center; }
+  .block-form .header-block {
+    position: relative;
+    padding: 10px 30px;
+    margin-bottom: 50px;
+    background-color: #b2d234; }
+    .block-form .header-block h4 {
+      text-transform: uppercase;
+      font-size: 16px; }
+      .block-form .header-block h4 span {
+        font-size: 14px;
+        text-transform: none; }
+    .block-form .header-block:after {
+      position: absolute;
+      content: "";
+      bottom: -40px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 40px 125px 0 125px;
+      border-color: #b2d234 transparent transparent transparent; }
+    .block-form .header-block:before {
+      position: absolute;
+      content: "";
+      bottom: -60px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 60px 125px 0 125px;
+      border-color: #e7e7e8 transparent transparent transparent; }
+  .block-form form {
+    display: none;
+    padding: 15px; }
+    .block-form form input, .block-form form textarea {
+      border: solid 1px #dfdfe0;
+      padding: 10px;
+      width: 100%;
+      font-size: 11px;
+      margin-bottom: 10px;
+      /* Firefox 19+ */
+      /* Firefox 18- */ }
+      .block-form form input::-webkit-input-placeholder, .block-form form textarea::-webkit-input-placeholder {
+        color: #cfcccb;
+        text-transform: uppercase; }
+      .block-form form input::-moz-placeholder, .block-form form textarea::-moz-placeholder {
+        color: #cfcccb;
+        text-transform: uppercase; }
+      .block-form form input:-moz-placeholder, .block-form form textarea:-moz-placeholder {
+        color: #cfcccb;
+        text-transform: uppercase; }
+      .block-form form input:-ms-input-placeholder, .block-form form textarea:-ms-input-placeholder {
+        color: #cfcccb;
+        text-transform: uppercase; }
+
 .font-lato, .block-form form input, .block-form form textarea {
   font-family: 'Lato', helvetica, sans-serif;
   font-weight: normal;
@@ -331,7 +365,7 @@ nav {
   font-weight: bold;
   font-style: normal; }
 
-.font-gotham-book, nav ul, .slider .text-slide h2 span, .form-sign-in input, .wrap-description .sub-title {
+.font-gotham-book, .slider .text-slide h2 span, .form-sign-in input, .wrap-description .sub-title {
   font-family: 'Gotham Book', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal; }
@@ -341,12 +375,12 @@ nav {
   font-weight: normal;
   font-style: italic; }
 
-.font-gotham-medium-italic, .block-form .header-block h4 span, .nav-dropdown li a, .slider .text-slide p {
+.font-gotham-medium-italic, .top-header .nav .sub-menu li a, .slider .text-slide p, .block-form .header-block h4 span {
   font-family: 'Gotham', helvetica, sans-serif;
   font-weight: 500;
   font-style: italic; }
 
-.font-gotham-medium, nav ul li a:hover {
+.font-gotham-medium {
   font-family: 'Gotham', helvetica, sans-serif;
   font-weight: 500;
   font-style: normal; }
@@ -446,64 +480,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     border-width: 25px 0 25px 15px;
     border-color: transparent transparent transparent #00afef; }
 
-.header .top-header {
-  height: 100px;
-  border-bottom: solid 10px #b2d234;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative; }
-  .header .top-header .mobile-button-menu {
-    display: none; }
-  .header .top-header .nav {
-    z-index: 3; }
-    .header .top-header .nav ul {
-      display: flex;
-      align-items: center;
-      justify-content: space-between; }
-      .header .top-header .nav ul li {
-        margin: 0 10px; }
-        .header .top-header .nav ul li a {
-          padding: 10px;
-          text-decoration: none;
-          color: #847c78;
-          text-transform: uppercase; }
-      .header .top-header .nav ul .link-with-border {
-        border: solid 1px #847c78; }
-    .header .top-header .nav .sub-menu {
-      display: none;
-      position: absolute;
-      bottom: -45px;
-      width: 100%;
-      left: 0;
-      text-align: right; }
-      .header .top-header .nav .sub-menu li {
-        display: inline-block; }
-        .header .top-header .nav .sub-menu li a {
-          color: white; }
-
-.header .bottom-header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: 55px;
-  background-color: #004376; }
-
-@media only screen and (max-width: 992px) {
-  .header .top-header .mobile-button-menu {
-    display: block; }
-  .header .top-header .nav {
-    position: absolute;
-    top: 100px;
-    right: 0;
-    width: 270px;
-    background-color: white;
-    display: block; }
-    .header .top-header .nav ul {
-      display: block; }
-      .header .top-header .nav ul li {
-        width: 100%; } }
+/************************/
 .btn-submit {
   cursor: pointer;
   font-size: 11px;

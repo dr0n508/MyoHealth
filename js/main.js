@@ -13,7 +13,7 @@
         this.classList.toggle('active');
     });
     $('#nav-toggle').click(function() {
-        $('nav ul').toggle();
+        $('.nav').toggle();
     });
 
     $('.block-form .header-block').click(function () {

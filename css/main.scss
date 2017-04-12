@@ -1,5 +1,6 @@
 @import "../fonts/fonts.css";
 @import "_grid.scss";
+@import "_header.scss";
 @import "nav.scss";
 @import "_slider.scss";
 @import "_forms.scss";
@@ -167,87 +168,9 @@ header {
   }
 }
 
+/************************/
 
 
-.header .top-header{
-  height: 100px;
-  border-bottom: solid 10px #b2d234;
-  //margin-top: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  .mobile-button-menu {
-    display: none;
-  }
-  .nav {
-    z-index: 3;
-    ul {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      li {
-        margin: 0 10px;
-        a {
-          padding: 10px;
-          text-decoration: none;
-          color: #847c78;
-          text-transform: uppercase;
-        }
-      }
-
-      .link-with-border {
-        border: solid 1px #847c78;
-      }
-    }
-    .sub-menu {
-      display: none;
-      position: absolute;
-      bottom: -45px;
-      width: 100%;
-      left: 0;
-      text-align: right;
-      li {
-        display: inline-block;
-        a {
-          color: white;
-        }
-      }
-    }
-  }
-}
-
-.header .bottom-header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: 55px;
-  background-color: #004376;
-  //overflow: hidden;
-}
-
-@media only screen and (max-width: 992px) {
-  .header .top-header{
-    .mobile-button-menu {
-      display: block;
-    }
-    .nav {
-      position: absolute;
-      top: 100px;
-      right: 0;
-      width: 270px;
-      background-color: white;
-      display: block;
-      ul {
-        display: block;
-        li {
-          width: 100%;
-        }
-      }
-    }
-  }
-}
 
 
 .btn-submit {

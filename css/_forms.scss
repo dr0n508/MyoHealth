@@ -15,3 +15,77 @@
     margin: 0 110px 0 20px;
   }
 }
+
+.block-form.open {
+  background-color: white;
+  form {
+    display: block;
+  }
+}
+
+.block-form {
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  width: 250px;
+  background-color: transparent;
+  padding-bottom: 10px;
+  color: #005da4;
+  top: 0px;
+  left: 35px;
+  text-align: center;
+  //border: solid 1px darkblue;
+  .header-block {
+    position: relative;
+    padding: 10px 30px;
+    margin-bottom: 50px;
+    background-color: #b2d234;
+    h4 {
+      text-transform: uppercase;
+      font-size: 16px;
+      span {
+        @extend .font-gotham-medium-italic;
+        font-size: 14px;
+        text-transform: none;
+      }
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: -40px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 40px 125px 0 125px;
+      border-color: #b2d234 transparent transparent transparent;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      bottom: -60px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 60px 125px 0 125px;
+      border-color: #e7e7e8 transparent transparent transparent;
+    }
+  }
+  form {
+    display: none;
+    padding: 15px;
+    input, textarea {
+      border: solid 1px #dfdfe0;
+      padding: 10px;
+      width: 100%;
+      @extend .font-lato;
+      font-size: 11px;
+      margin-bottom: 10px;
+      &::-webkit-input-placeholder {color:#cfcccb; text-transform: uppercase}
+      &::-moz-placeholder          {color:#cfcccb; text-transform: uppercase}/* Firefox 19+ */
+      &:-moz-placeholder           {color:#cfcccb; text-transform: uppercase}/* Firefox 18- */
+      &:-ms-input-placeholder      {color:#cfcccb; text-transform: uppercase}
+    }
+  }
+}
