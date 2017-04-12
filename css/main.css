@@ -502,6 +502,12 @@ header .bottom-header {
     .tips .wrap-text-tip {
       width: calc(100% - 120px); } }
 
+.recipes {
+  padding: 110px 100px 50px 100px;
+  background: url("../img/bg-smart.png");
+  background-size: cover;
+  overflow: hidden; }
+
 .font-lato, .block-form form input, .block-form form textarea {
   font-family: 'Lato', helvetica, sans-serif;
   font-weight: normal;
