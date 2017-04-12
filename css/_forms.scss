@@ -89,4 +89,17 @@
       &:-ms-input-placeholder      {color:#cfcccb; text-transform: uppercase}
     }
   }
+  @media only screen and (max-width: 768px) {
+    width: 190px;
+    left: 20px;
+    .header-block {
+      padding: 10px 10px;
+      &:after {
+        border-width: 40px 95px 0 95px;
+      }
+      &:before {
+        border-width: 60px 95px 0 95px;
+      }
+    }
+  }
 }
