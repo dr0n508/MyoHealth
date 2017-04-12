@@ -27,11 +27,19 @@
           text-decoration: none;
           color: #847c78;
           text-transform: uppercase;
+          &:hover {
+            @extend .font-gotham-bold;
+            color: #005da4;
+            text-decoration: none;
+          }
         }
       }
 
       .link-with-border {
         border: solid 1px #847c78;
+        &:hover {
+          border: solid 1px #005da4;
+        }
       }
     }
     .sub-menu {
@@ -116,13 +124,14 @@ header .bottom-header {
 
 
 @media only screen and (max-width: 992px) {
-  header .top-header{
+  header .top-header {
+    height: 105px;
     .mobile-button-menu {
       display: block;
     }
     nav {
       position: absolute;
-      top: 100px;
+      top: 105px;
       right: 0;
       width: 270px;
       background-color: white;
@@ -146,6 +155,36 @@ header .bottom-header {
             border: none;
             color: white;
             border-bottom: solid 1px white;
+          }
+          .link-sub-menu.open {
+            &:after, &:before {
+              background-color: #005da4;
+            }
+          }
+          .link-sub-menu {
+            position: relative;
+            &:after {
+              content: "";
+              position: absolute;
+              right: 10px;
+              top:50%;
+              width: 10px;
+              height: 2px;
+              background-color: #bcbdc0;
+              display: block;
+              transform: rotate(-45deg);
+            }
+            &:before {
+              content: "";
+              position: absolute;
+              right: 16px;
+              top:50%;
+              width: 10px;
+              height: 2px;
+              background-color: #bcbdc0;
+              display: block;
+              transform: rotate(45deg);
+            }
           }
           .sub-menu {
             position: static;

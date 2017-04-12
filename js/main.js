@@ -1,6 +1,7 @@
 (function($) {
     $(function() {
         $('nav ul li > a:not(:only-child)').click(function(e) {
+            $(this).toggleClass('open');
             $(this).siblings('.sub-menu').toggle();
             $('.sub-menu').not($(this).siblings()).hide();
             e.stopPropagation();
@@ -18,7 +19,7 @@
 
     $('.block-form .header-block').click(function () {
         $('.block-form').toggleClass('open');
-    })
+    });
 
 
 
