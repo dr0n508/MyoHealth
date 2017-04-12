@@ -15,6 +15,9 @@
 .col-1-2 {
   width: 50%; }
 
+.col-2-3 {
+  width: 66.66%; }
+
 .col-1-3 {
   width: 33.33%; }
 
@@ -129,6 +132,9 @@ header .bottom-header {
     #nav-toggle.active span:after {
       transform: rotate(-45deg); }
 
+@media only screen and (min-width: 1200px) {
+  nav {
+    display: block; } }
 @media only screen and (max-width: 1200px) {
   .top-header nav ul li {
     margin: 0px 5px; }
@@ -430,22 +436,88 @@ header .bottom-header {
     border-width: 25px 0 25px 15px;
     border-color: transparent transparent transparent #00afef; }
 
+.tips {
+  padding: 110px 100px 50px 100px;
+  background: url("../img/bg-smart.png");
+  background-size: cover;
+  overflow: hidden; }
+  .tips .tip1 .wrap-img-tip {
+    background: url("../img/tips/486888646.jpg") no-repeat 50% 50%; }
+  .tips .tip2 .wrap-img-tip {
+    background: url("../img/tips/520712882.jpg") no-repeat 50% 50%; }
+  .tips .tip3 .wrap-img-tip {
+    background: url("../img/tips/528298062.jpg") no-repeat 50% 50%; }
+  .tips .tip4 .wrap-img-tip {
+    background: url("../img/tips/612232770.jpg") no-repeat 50% 50%; }
+  .tips .list-tips li {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 50px; }
+  .tips .wrap-img-tip {
+    background-size: cover !important;
+    height: 310px;
+    width: 310px; }
+  .tips .wrap-text-tip {
+    color: #004c9a;
+    width: calc(100% - 310px);
+    padding-left: 100px; }
+    .tips .wrap-text-tip h2 {
+      font-size: 36px;
+      text-transform: uppercase;
+      margin-bottom: 45px; }
+    .tips .wrap-text-tip p {
+      font-size: 21px; }
+  @media only screen and (max-width: 992px) {
+    .tips {
+      padding: 25px; }
+      .tips .wrap-text-tip {
+        padding-left: 40px; } }
+  @media only screen and (max-width: 768px) {
+    .tips {
+      padding: 10px; }
+      .tips .list-tips li {
+        align-items: flex-start;
+        margin-bottom: 40px; }
+      .tips .wrap-img-tip {
+        width: 160px;
+        height: 160px; }
+      .tips .wrap-text-tip {
+        width: calc(100% - 160px);
+        padding-left: 15px; }
+        .tips .wrap-text-tip h2 {
+          font-size: 16px;
+          margin-bottom: 15px; }
+        .tips .wrap-text-tip p {
+          font-size: 13px; } }
+  @media only screen and (max-width: 450px) {
+    .tips .wrap-text-tip h2 {
+      font-size: 11px; }
+    .tips .wrap-text-tip p {
+      font-size: 9px; } }
+  @media only screen and (max-width: 450px) {
+    .tips .wrap-img-tip {
+      width: 120px;
+      height: 120px; }
+    .tips .wrap-text-tip {
+      width: calc(100% - 120px); } }
+
 .font-lato, .block-form form input, .block-form form textarea {
   font-family: 'Lato', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal; }
 
-.font-gotham-bold, .top-header nav ul li a:hover, .slider .text-slide h2, .btn-submit, .arrow-button, .wrap-description .title, .bottom-graphical-nav h3 {
+.font-gotham-bold, .top-header nav ul li a:hover, .slider .text-slide h2, .btn-submit, .arrow-button, .tips .wrap-text-tip h2, .wrap-description .title, .bottom-graphical-nav h3 {
   font-family: 'Gotham', helvetica, sans-serif;
   font-weight: bold;
   font-style: normal; }
 
-.font-gotham-book, .slider .text-slide h2 span, .form-sign-in input, .wrap-description .sub-title {
+.font-gotham-book, .slider .text-slide h2 span, .form-sign-in input, .tips .wrap-text-tip h2 span, .wrap-description .sub-title {
   font-family: 'Gotham Book', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal; }
 
-.font-gotham-book-italic, .wrap-description .text-desctiption {
+.font-gotham-book-italic, .tips .wrap-text-tip p, .wrap-description .text-desctiption {
   font-family: 'Gotham Book', helvetica, sans-serif;
   font-weight: normal;
   font-style: italic; }
