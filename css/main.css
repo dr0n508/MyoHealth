@@ -508,9 +508,13 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 .compose-img {
   text-align: center;
   position: relative; }
+  .compose-img img {
+    max-width: 80%;
+    height: auto; }
 
 .wrap-description {
-  color: #004c9a; }
+  color: #004c9a;
+  padding-right: 150px; }
   .wrap-description .title {
     font-size: 36px; }
   .wrap-description .sub-title {
@@ -519,5 +523,29 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   .wrap-description .text-desctiption {
     font-size: 21px;
     margin-bottom: 60px; }
+  @media only screen and (max-width: 992px) {
+    .wrap-description {
+      padding-right: 40px; }
+      .wrap-description .title, .wrap-description .sub-title {
+        font-size: 24px; }
+      .wrap-description .text-desctiption {
+        font-size: 14px;
+        margin-bottom: 40px; }
+      .wrap-description .sub-title {
+        margin-bottom: 40px; } }
+  @media only screen and (max-width: 768px) {
+    .wrap-description {
+      padding-left: 40px; }
+      .wrap-description .text-desctiption {
+        font-size: 14px;
+        margin-bottom: 30px; }
+      .wrap-description .sub-title {
+        margin-bottom: 25px; }
+      .wrap-description .arrow-button {
+        font-size: 11px;
+        height: 30px;
+        line-height: 30px; }
+        .wrap-description .arrow-button:after {
+          border-width: 15px 0 15px 15px; } }
 
 /*# sourceMappingURL=main.css.map */
