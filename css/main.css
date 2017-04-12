@@ -546,6 +546,23 @@ header .bottom-header {
     background: url("../img/graphical-nav/503207881.jpg") no-repeat 50% 50%;
     background-size: cover; }
 
+@media only screen and (max-width: 992px) {
+  .recipes {
+    padding: 32px 32px 50px 32px; }
+
+  .list-recipes li {
+    width: 50%;
+    padding: 0 22px; } }
+@media only screen and (max-width: 768px) {
+  .recipes {
+    padding: 10px 10px 20px 10px; }
+
+  .list-recipes li {
+    padding: 0 5px; }
+    .list-recipes li a {
+      height: 200px; }
+    .list-recipes li h2 {
+      font-size: 12px; } }
 .font-lato, .block-form form input, .block-form form textarea {
   font-family: 'Lato', helvetica, sans-serif;
   font-weight: normal;
