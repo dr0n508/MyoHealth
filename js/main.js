@@ -18,9 +18,10 @@
             e.stopPropagation();
         });
         $('html').click(function() {
-            if ($(window).width() <= '992')
-            $('nav').hide();
-            $('#nav-toggle').removeClass('active');
+            if ($(window).width() <= '992') {
+                $('nav').hide();
+                $('#nav-toggle').removeClass('active');
+            }
         });
     });
 
