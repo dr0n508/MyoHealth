@@ -623,17 +623,17 @@ footer {
   font-weight: normal;
   font-style: normal; }
 
-.font-gotham-bold, .top-header nav ul li a:hover, header .bottom-header .phone-number, .btn-submit, .arrow-button, .tips .wrap-text-tip h2, .top-video-section .text-slide h2, .wrap-description .title, .bottom-graphical-nav h3 {
+.font-gotham-bold, .top-header nav ul li a:hover, header .bottom-header .phone-number, .btn-submit, .arrow-button, .tips .wrap-text-tip h2, .top-video-section .text-slide h2, .wrap-text-description .title, .bottom-graphical-nav h3 {
   font-family: 'Gotham', helvetica, sans-serif;
   font-weight: bold;
   font-style: normal; }
 
-.font-gotham-book, .form-sign-in input, .tips .wrap-text-tip h2 span, .top-video-section .text-slide h2 span, .wrap-description .sub-title {
+.font-gotham-book, .form-sign-in input, .tips .wrap-text-tip h2 span, .top-video-section .text-slide h2 span, .wrap-text-description .sub-title {
   font-family: 'Gotham Book', helvetica, sans-serif;
   font-weight: normal;
   font-style: normal; }
 
-.font-gotham-book-italic, .tips .wrap-text-tip p, .wrap-description .text-desctiption {
+.font-gotham-book-italic, .tips .wrap-text-tip p, .wrap-text-description .text-desctiption {
   font-family: 'Gotham Book', helvetica, sans-serif;
   font-weight: normal;
   font-style: italic; }
@@ -684,7 +684,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   .social-bar .youtube-link {
     background: url("../img/icon-youtube.png") no-repeat 50% 50%; }
 
-.description-product {
+.description-product-section {
   background: url("../img/bg-smart.jpg");
   background-size: cover;
   padding: 60px 0; }
@@ -696,40 +696,40 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     max-width: 80%;
     height: auto; }
 
-.wrap-description {
+.wrap-text-description {
   color: #004c9a;
   padding-right: 150px; }
-  .wrap-description .title {
+  .wrap-text-description .title {
     font-size: 36px; }
-  .wrap-description .sub-title {
+  .wrap-text-description .sub-title {
     font-size: 36px;
     margin-bottom: 60px; }
-  .wrap-description .text-desctiption {
+  .wrap-text-description .text-desctiption {
     font-size: 21px;
     margin-bottom: 60px; }
   @media only screen and (max-width: 992px) {
-    .wrap-description {
+    .wrap-text-description {
       padding-right: 40px; }
-      .wrap-description .title, .wrap-description .sub-title {
+      .wrap-text-description .title, .wrap-text-description .sub-title {
         font-size: 24px; }
-      .wrap-description .text-desctiption {
+      .wrap-text-description .text-desctiption {
         font-size: 14px;
         margin-bottom: 40px; }
-      .wrap-description .sub-title {
+      .wrap-text-description .sub-title {
         margin-bottom: 40px; } }
   @media only screen and (max-width: 768px) {
-    .wrap-description {
+    .wrap-text-description {
       padding-left: 40px; }
-      .wrap-description .text-desctiption {
+      .wrap-text-description .text-desctiption {
         font-size: 14px;
         margin-bottom: 30px; }
-      .wrap-description .sub-title {
+      .wrap-text-description .sub-title {
         margin-bottom: 25px; }
-      .wrap-description .arrow-button {
+      .wrap-text-description .arrow-button {
         font-size: 11px;
         height: 30px;
         line-height: 30px; }
-        .wrap-description .arrow-button:after {
+        .wrap-text-description .arrow-button:after {
           border-width: 15px 0 15px 15px; } }
 
 .bottom-graphical-nav {
