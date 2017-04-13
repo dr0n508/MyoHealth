@@ -34,7 +34,6 @@
           }
         }
       }
-
       .link-with-border {
         border: solid 1px #847c78;
         &:hover {
@@ -73,7 +72,6 @@ header .bottom-header {
   height: 55px;
   background-color: #004376;
 }
-
 
 #nav-toggle {
   cursor: pointer;
@@ -114,11 +112,12 @@ header .bottom-header {
     }
   }
 }
-@media only screen and (min-width: 1200px) {
-  nav {
-    display: block;
-  }
-}
+
+//@media only screen and (min-width: 1200px) {
+//  nav {
+//    display: block;
+//  }
+//}
 @media only screen and (max-width: 1200px) {
   .top-header {
     nav ul li {
@@ -129,7 +128,6 @@ header .bottom-header {
     }
   }
 }
-
 
 @media only screen and (max-width: 992px) {
   header .top-header {

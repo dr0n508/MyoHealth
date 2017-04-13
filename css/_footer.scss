@@ -1,0 +1,26 @@
+footer {
+  overflow: hidden;
+  font-size: 12px;
+  color: #afaaa8;
+  padding: 30px;
+
+  .copyright {
+    float: left;
+  }
+  .footer-link {
+    color: #afaaa8;
+    float: right;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+    .copyright, .footer-link {
+      float: none;
+      display: block;
+    }
+    .copyright {
+      margin-bottom: 15px;
+    }
+  }
+}

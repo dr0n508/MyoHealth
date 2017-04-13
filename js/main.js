@@ -81,19 +81,16 @@
 
 
 
-        /************video**************/
+    /************video**************/
 
-            //load video muted
-        var video = $("#myvideo");
-            video.vimeo("play");
-            video.vimeo("setVolume", 0);
-            video.vimeo("loop");
+        //load video muted
+        var videoTop = $("#myvideo");
+            videoTop.vimeo("play");
+            videoTop.vimeo("setVolume", 0);
+            videoTop.vimeo("loop");
 
+        var videoBottom = $("#bottom-video");
 
-        var video2 = $("#bottom-video");
-        // video2.vimeo("play");
-        //     video2.vimeo("setVolume", 0);
-        //     video2.vimeo("loop");
 
 
 
@@ -104,16 +101,16 @@
         $(this).toggleClass('play');
         if ($(this).hasClass('play')) {
             //pause video
-            video2.vimeo("pause");
+            videoBottom.vimeo("pause");
             // $(this).css('background', 'url("http://unclebarts.co.uk/wp-content/themes/bungabunga_bootstrap/img/video-controls/play.png") no-repeat');
         } else {
             //unpause video
-            video2.vimeo("play");
+            videoBottom.vimeo("play");
             console.log('dn');
             $(this).siblings(".overlay").hide();
             // $(this).next(".overlay").hide();
             // $('.overlay')
-            $('.button-play-video').hide();
+            $(this).hide();
             // $(this).css('background', 'url("http://unclebarts.co.uk/wp-content/themes/bungabunga_bootstrap/img/video-controls/pause.png") no-repeat');
         }
     });
@@ -123,12 +120,12 @@
         $(this).toggleClass('mute');
         if ($(this).hasClass('mute')) {
             //unmute video
-            video2.vimeo("setVolume", 1);
+            videoBottom.vimeo("setVolume", 1);
             $(this).css('background', 'url("http://unclebarts.co.uk/wp-content/themes/bungabunga_bootstrap/img/video-controls/volume.png") no-repeat');
 
         } else {
             //mute video
-            video2.vimeo("setVolume", 0);
+            videoBottom.vimeo("setVolume", 0);
             $(this).css('background', 'url("http://unclebarts.co.uk/wp-content/themes/bungabunga_bootstrap/img/video-controls/mute.png") no-repeat');
         }
     });
