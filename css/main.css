@@ -713,17 +713,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     display: block;
     text-decoration: none;
     z-index: 0; }
-    .bottom-graphical-nav .link-menu:after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      z-index: 3;
-      filter: grayscale(1); }
-    .bottom-graphical-nav .link-menu:hover:after {
-      filter: grayscale(0); }
   .bottom-graphical-nav h3 {
     font-size: 24px;
     color: white;
@@ -734,18 +723,30 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     z-index: 999;
     bottom: 55px;
     width: 100%; }
-  .bottom-graphical-nav .link-products:after {
-    background: url("../img/graphical-nav/469460902.jpg") 50% 50% no-repeat;
+  .bottom-graphical-nav .link-products {
+    background: url("../img/graphical-nav/469460902_BW.jpg") 50% 50% no-repeat;
     background-size: cover; }
-  .bottom-graphical-nav .link-resources:after {
-    background: url("../img/graphical-nav/503207881.jpg") 50% 50% no-repeat;
+    .bottom-graphical-nav .link-products:hover {
+      background: url("../img/graphical-nav/469460902.jpg") 50% 50% no-repeat;
+      background-size: cover; }
+  .bottom-graphical-nav .link-resources {
+    background: url("../img/graphical-nav/503207881_BW.jpg") 50% 50% no-repeat;
     background-size: cover; }
-  .bottom-graphical-nav .link-faq:after {
-    background: url("../img/graphical-nav/515157804.jpg") 50% 50% no-repeat;
+    .bottom-graphical-nav .link-resources:hover {
+      background: url("../img/graphical-nav/503207881.jpg") 50% 50% no-repeat;
+      background-size: cover; }
+  .bottom-graphical-nav .link-faq {
+    background: url("../img/graphical-nav/515157804_BW.jpg") 50% 50% no-repeat;
     background-size: cover; }
-  .bottom-graphical-nav .link-why-myohealth:after {
+    .bottom-graphical-nav .link-faq:hover {
+      background: url("../img/graphical-nav/515157804.jpg") 50% 50% no-repeat;
+      background-size: cover; }
+  .bottom-graphical-nav .link-why-myohealth {
     background: url("../img/graphical-nav/519159798_BW.jpg") 50% 50% no-repeat;
     background-size: cover; }
+    .bottom-graphical-nav .link-why-myohealth:hover {
+      background: url("../img/graphical-nav/519159798_BW.jpg") 50% 50% no-repeat;
+      background-size: cover; }
   @media only screen and (max-width: 992px) {
     .bottom-graphical-nav .link-menu {
       height: 240px; }

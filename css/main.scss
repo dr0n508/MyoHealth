@@ -167,19 +167,6 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     display: block;
     text-decoration: none;
     z-index: 0;
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top:0;
-      z-index: 3;
-      filter: grayscale(1);
-    }
-    &:hover:after {
-      filter: grayscale(0);
-    }
   }
   h3 {
     @extend .font-gotham-bold;
@@ -193,11 +180,30 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     bottom: 55px;
     width: 100%;
   }
-  .link-products:after { background: url("../img/graphical-nav/469460902.jpg") 50% 50% no-repeat; background-size: cover }
-  .link-resources:after { background: url("../img/graphical-nav/503207881.jpg") 50% 50% no-repeat; background-size: cover }
-  .link-faq:after { background: url("../img/graphical-nav/515157804.jpg") 50% 50% no-repeat; background-size: cover}
-  .link-why-myohealth:after { background: url("../img/graphical-nav/519159798_BW.jpg") 50% 50% no-repeat; background-size: cover}
-
+  .link-products{
+    background: url("../img/graphical-nav/469460902_BW.jpg") 50% 50% no-repeat; background-size: cover;
+    &:hover {
+      background: url("../img/graphical-nav/469460902.jpg") 50% 50% no-repeat; background-size: cover;
+    }
+  }
+  .link-resources{
+    background: url("../img/graphical-nav/503207881_BW.jpg") 50% 50% no-repeat; background-size: cover;
+    &:hover {
+      background: url("../img/graphical-nav/503207881.jpg") 50% 50% no-repeat; background-size: cover;
+    }
+  }
+  .link-faq{
+    background: url("../img/graphical-nav/515157804_BW.jpg") 50% 50% no-repeat; background-size: cover;
+    &:hover {
+      background: url("../img/graphical-nav/515157804.jpg") 50% 50% no-repeat; background-size: cover;
+    }
+  }
+  .link-why-myohealth{
+    background: url("../img/graphical-nav/519159798_BW.jpg") 50% 50% no-repeat; background-size: cover;
+    &:hover {
+      background: url("../img/graphical-nav/519159798_BW.jpg") 50% 50% no-repeat; background-size: cover;
+    }
+  }
   @media only screen and (max-width: 992px) {
     .link-menu {
       height: 240px;
