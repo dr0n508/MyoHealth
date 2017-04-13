@@ -1,11 +1,14 @@
 @import "../fonts/fonts.css";
 @import "_grid.scss";
 @import "_header.scss";
-@import "_slider.scss";
+//@import "_slider.scss";
 @import "_forms.scss";
 @import "_buttons.scss";
 @import "_tips.scss";
 @import "_recipes.scss";
+@import "_video.scss";
+
+
 
 
 
@@ -179,31 +182,9 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   position: relative;
 }
 
-.button-play-video {
-  content: "";
-  position: absolute;
-  background: url("../img/video-play-icon.png") 50% 50% no-repeat;
-  width: 121px;
-  height: 121px;
-  margin-top: -60px;
-  margin-right: -60px;
-  top: 50%;
-  right: 50%;
-}
 
-.videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-}
-.videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
+
 
 .bottom-graphical-nav {
   overflow: hidden;
@@ -313,7 +294,16 @@ footer {
 
 
 
+.videoWrapper {
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
 
+  }
+}
 
 
 

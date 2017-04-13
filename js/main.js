@@ -68,13 +68,69 @@
 
 
 
-        $('.button-play-video').on('click', function(ev) {
+        // $('.button-play-video').on('click', function(ev) {
+        //
+        //     $("#video")[0].src += "&autoplay=1";
+        //     ev.preventDefault();
+        //     $('.button-play-video').hide();
+        //
+        // });
 
-            $("#video")[0].src += "&autoplay=1";
-            ev.preventDefault();
-            $('.button-play-video').hide();
 
-        });
+
+
+
+
+        /************video**************/
+
+            //load video muted
+        var video = $("#myvideo");
+            video.vimeo("play");
+            video.vimeo("setVolume", 0);
+            video.vimeo("loop");
+
+
+        var video2 = $("#bottom-video");
+        // video2.vimeo("play");
+        //     video2.vimeo("setVolume", 0);
+        //     video2.vimeo("loop");
+
+
+
+
+    //toggle play/pause
+    $('#play-pause').click(function() {
+        console.log('click');
+        $(this).toggleClass('play');
+        if ($(this).hasClass('play')) {
+            //pause video
+            video2.vimeo("pause");
+            // $(this).css('background', 'url("http://unclebarts.co.uk/wp-content/themes/bungabunga_bootstrap/img/video-controls/play.png") no-repeat');
+        } else {
+            //unpause video
+            video2.vimeo("play");
+            console.log('dn');
+            // $(this).css('background', 'url("http://unclebarts.co.uk/wp-content/themes/bungabunga_bootstrap/img/video-controls/pause.png") no-repeat');
+        }
+    });
+
+    //toggle mute/unmute
+    $('#mute-unmute').click(function() {
+        $(this).toggleClass('mute');
+        if ($(this).hasClass('mute')) {
+            //unmute video
+            video2.vimeo("setVolume", 1);
+            $(this).css('background', 'url("http://unclebarts.co.uk/wp-content/themes/bungabunga_bootstrap/img/video-controls/volume.png") no-repeat');
+
+        } else {
+            //mute video
+            video2.vimeo("setVolume", 0);
+            $(this).css('background', 'url("http://unclebarts.co.uk/wp-content/themes/bungabunga_bootstrap/img/video-controls/mute.png") no-repeat');
+        }
+    });
+
+
+        /*********************/
 
 
 
@@ -82,13 +138,13 @@
 
 })(jQuery);
 
-
-$('.slider-first-page').bxSlider({
-    video: true,
-    useCSS: false
-});
-
-$('.bxslider').bxSlider({
-    video: true,
-    useCSS: false
-});
+//
+// $('.slider-first-page').bxSlider({
+//     video: true,
+//     useCSS: false
+// });
+//
+// $('.bxslider').bxSlider({
+//     video: true,
+//     useCSS: false
+// });

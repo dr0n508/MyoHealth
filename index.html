@@ -7,7 +7,7 @@
     <title>MyoHealth</title>
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <!--<link href="css/bxslider/jquery.bxslider.css" rel="stylesheet" />-->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -88,32 +88,53 @@
     </div>
 
 </header>
-
-<section class="slider">
-    <!--<div class="container">-->
-        <ul class="slider-first-page">
-            <li>
-                <iframe src="https://player.vimeo.com/video/204429347" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <div class="text-slide">
-                    <h2>LIVE STRONGER <span>AT ANY AGE</span></h2>
-                    <p>The Anti-Aging Essential Amino Acid Agent</p>
-                </div>
-            </li>
-            <li>
-                <iframe src="https://player.vimeo.com/video/204429347" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <div class="text-slide">
-                    <h2>CONTAINS ALL NINE ESSENTIAL <span>AMINO ACIDS</span></h2>
-                    <p>to help your body synthesize protein, increase musclestrength, function and decrease muscle loss.</p>
-                </div>
-            </li>
-            <li>
-                <iframe src="https://player.vimeo.com/video/204429347" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <div class="text-slide">
-                    <h2>CLINICALLY PROVEN AMINO ACID COMPLEX <span>SUPPORTS MUSCLE STRENGTH & FUNCTION</span></h2>                    <p></p>
-                </div>
-            </li>
-        </ul>
+<section class="top-video-section">
+    <div class="videoWrapper">
+        <iframe id="myvideo" src="https://player.vimeo.com/video/204429347?background=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <div class="text-slide">
+            <h2>LIVE STRONGER <span>AT ANY AGE</span></h2>
+            <p>The Anti-Aging Essential Amino Acid Agent</p>
+        </div>
+    </div>
 </section>
+
+
+
+<!--<section class="video-section">-->
+    <!--<div class="videoWrapper">-->
+        <!--&lt;!&ndash;<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/v2AC41dglnM?rel=0" frameborder="0" allowfullscreen></iframe>&ndash;&gt;-->
+        <!--<iframe id="myvideo" src="https://player.vimeo.com/video/204429347?background=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+    <!--</div>-->
+    <!--<a href="#" class="button-play-video"></a>-->
+    <!--<span id="play-pause"></span>-->
+    <!--<span id="mute-unmute"></span>-->
+<!--</section>-->
+
+<!--<section class="slider">-->
+    <!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
+        <!--<ul class="slider-first-page">-->
+            <!--<li>-->
+                <!--<iframe src="https://player.vimeo.com/video/204429347" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+                <!--<div class="text-slide">-->
+                    <!--<h2>LIVE STRONGER <span>AT ANY AGE</span></h2>-->
+                    <!--<p>The Anti-Aging Essential Amino Acid Agent</p>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<iframe src="https://player.vimeo.com/video/204429347" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+                <!--<div class="text-slide">-->
+                    <!--<h2>CONTAINS ALL NINE ESSENTIAL <span>AMINO ACIDS</span></h2>-->
+                    <!--<p>to help your body synthesize protein, increase musclestrength, function and decrease muscle loss.</p>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<iframe src="https://player.vimeo.com/video/204429347" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+                <!--<div class="text-slide">-->
+                    <!--<h2>CLINICALLY PROVEN AMINO ACID COMPLEX <span>SUPPORTS MUSCLE STRENGTH & FUNCTION</span></h2>                    <p></p>-->
+                <!--</div>-->
+            <!--</li>-->
+        <!--</ul>-->
+<!--</section>-->
 
 <section class="description-product">
     <div class="grid">
@@ -135,14 +156,13 @@
     </div>
 </section>
 
-<section class="video-section">
+<section class="bottom-video-section">
     <div class="videoWrapper">
-        <!--<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/v2AC41dglnM?rel=0" frameborder="0" allowfullscreen></iframe>-->
-        <iframe id="video" src="https://player.vimeo.com/video/204429347?rel=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe id="bottom-video" src="https://player.vimeo.com/video/204429347" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
-    <a href="#" class="button-play-video"></a>
+    <span id="play-pause" class="play button-play-video"></span>
+    <span id="mute-unmute"></span>
 </section>
-
 
 <section class="bottom-graphical-nav">
     <div class="grid">
@@ -170,14 +190,17 @@
         </div>
     </div>
 </section>
+
 <footer>
     <p class="copyright">© 2017 Copyright MyoHealth. All rights reserved.</p>
     <a href="#" class="footer-link">Policy & Terms</a>
 </footer>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="js/jquery.fitvids.js"></script>
-<script src="js/jquery.bxslider.min.js"></script>
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>-->
+<script src="http://jacobnewman.co.uk/test/vimeo/dist/jquery.vimeo.api.min.js"></script>
+<!--<script src="js/jquery.fitvids.js"></script>-->
+<!--<script src="js/jquery.bxslider.min.js"></script>-->
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>
