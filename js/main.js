@@ -6,7 +6,7 @@
             $(this).toggleClass('open');
             $(this).siblings('.sub-menu').toggle();
             $('.sub-menu').not($(this).siblings()).hide();
-            // $('.form-sign-in').hide();
+            $('.form-sign-in').hide();
             e.stopPropagation();
         });
         $('html').click(function() {
@@ -51,8 +51,8 @@
                 $('nav').hide();
                 $('#nav-toggle').removeClass('active');
             } else {
-                console.log('des');
                 $('.form-sign-in').toggle();
+                $('.sub-menu').hide();
             }
             e.stopPropagation();
 
