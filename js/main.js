@@ -7,6 +7,9 @@ $(document).ready(function () {
     var socialBar = $('.social-bar');
     var phoneNumber = $('.phone-number');
 
+    var mobileBreakpoint = 768;
+    var tabletBreakpoint = 992;
+
     //open sub menu
 
     $('nav ul li > a:not(:only-child)').click(function(e) {
@@ -28,7 +31,7 @@ $(document).ready(function () {
         e.stopPropagation();
     });
     $('html').click(function() {
-        if ($(window).width() <= '992') {
+        if ($(window).width() <= tabletBreakpoint) {
             mainNav.hide();
             btnMobileMenu.removeClass('active');
         }
@@ -42,12 +45,12 @@ $(document).ready(function () {
     //open sign-in form
     $('#signIn').click(function (e) {
 
-        if ($(window).width() <= 992 && $(window).width() >= 768) {
+        if ($(window).width() <= tabletBreakpoint && $(window).width() >= mobileBreakpoint) {
             mainNav.hide();
             btnMobileMenu.removeClass('active');
             formSignIn.toggle().removeClass('mobile-form-signin');
         }
-         else if ($(window).width() <= 768){
+         else if ($(window).width() <= mobileBreakpoint){
             formSignIn.addClass('mobile-form-signin').show();
             formBlock.hide();
             socialBar.hide();
@@ -76,13 +79,13 @@ $(document).ready(function () {
         // console.log('resize');
         formBlock.removeClass('open');
         formSignIn.hide();
-        if ($(window).width() <= 992 && $(window).width() >= 768) {  //992-768
+        if ($(window).width() <= tabletBreakpoint && $(window).width() >= 768) {  //992-768
             mainNav.hide();
             formBlock.show();
             btnMobileMenu.removeClass('active');
             phoneNumber.hide();
         }
-        else if ($(window).width() <= 768) {                          //0-768
+        else if ($(window).width() <= mobileBreakpoint) {                          //0-768
             mainNav.hide();
             phoneNumber.show();
             socialBar.show();

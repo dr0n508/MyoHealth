@@ -73,6 +73,10 @@ header .bottom-header {
   height: 55px;
   background-color: #004376;
   .phone-number {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     @extend .font-gotham-bold;
     color: #9ace48;
     font-size: 18px;
@@ -260,6 +264,7 @@ header .bottom-header {
         position: static;
         background: none;
         box-shadow: none;
+        margin-right: 20px;
         ul {
           display: flex;
         }
@@ -273,6 +278,26 @@ header .bottom-header {
           height: 30px;
           background-size: 35%;
         }
+      }
+    }
+  }
+  #nav-toggle {
+    span,
+    span:before,
+    span:after {
+      height: 5px;
+      width: 35px;
+    }
+    span:before {
+      top: 10px;
+    }
+    span:after {
+      bottom: 10px;
+    }
+    &.active span {
+      &:before,
+      &:after {
+        top: 18px;
       }
     }
   }

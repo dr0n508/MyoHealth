@@ -91,6 +91,10 @@ header .bottom-header {
   height: 55px;
   background-color: #004376; }
   header .bottom-header .phone-number {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     color: #9ace48;
     font-size: 18px;
     margin-left: 10px;
@@ -216,7 +220,8 @@ header .bottom-header {
   header .bottom-header .social-bar {
     position: static;
     background: none;
-    box-shadow: none; }
+    box-shadow: none;
+    margin-right: 20px; }
     header .bottom-header .social-bar ul {
       display: flex; }
     header .bottom-header .social-bar .twitter-link, header .bottom-header .social-bar .youtube-link {
@@ -226,7 +231,19 @@ header .bottom-header {
     header .bottom-header .social-bar .facebook-link {
       width: 30px;
       height: 30px;
-      background-size: 35%; } }
+      background-size: 35%; }
+
+  #nav-toggle span,
+  #nav-toggle span:before,
+  #nav-toggle span:after {
+    height: 5px;
+    width: 35px; }
+  #nav-toggle span:before {
+    top: 10px; }
+  #nav-toggle span:after {
+    bottom: 10px; }
+  #nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 18px; } }
 .form-sign-in {
   float: right;
   display: none;
@@ -262,6 +279,10 @@ header .bottom-header {
     display: block; }
   .block-form.open form {
     display: block; }
+
+@media only screen and (max-width: 992px) {
+  .recipes-page .block-form, .tips-page .block-form {
+    display: none !important; } }
 
 .block-form {
   cursor: pointer;

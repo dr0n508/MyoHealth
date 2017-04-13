@@ -45,6 +45,14 @@
   }
 }
 
+.recipes-page, .tips-page {
+  @media only screen and (max-width: 992px) {
+    .block-form { display: none !important;}
+  }
+}
+
+
+
 .block-form {
   cursor: pointer;
   position: absolute;
