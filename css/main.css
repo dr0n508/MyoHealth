@@ -73,7 +73,8 @@
       bottom: -45px;
       width: 100%;
       left: 0;
-      text-align: right; }
+      text-align: right;
+      z-index: 6; }
       .top-header nav .sub-menu li {
         display: inline-block; }
         .top-header nav .sub-menu li a {
@@ -220,7 +221,8 @@ header .bottom-header {
       background-size: 35%; } }
 .form-sign-in {
   float: right;
-  display: none; }
+  display: none;
+  z-index: 2; }
   .form-sign-in input {
     background-color: white;
     font-size: 11px;
@@ -234,6 +236,7 @@ header .bottom-header {
     margin: 0 110px 0 20px; }
 
 .form-sign-in.mobile-form-signin {
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -540,31 +543,34 @@ header .bottom-header {
   right: 50%;
   z-index: 2; }
 
-.top-video-section .text-slide {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 850px;
-  max-width: 100%;
-  color: white;
-  z-index: 2; }
-  .top-video-section .text-slide h2 {
-    font-size: 46px;
-    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.75); }
-  .top-video-section .text-slide p {
-    font-size: 21px;
-    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.75); }
-@media only screen and (max-width: 992px) {
-  .top-video-section .text-slide h2 {
-    font-size: 41px; } }
-@media only screen and (max-width: 768px) {
-  .top-video-section .text-slide h2 {
-    font-size: 26px; } }
+.top-video-section {
+  overflow: hidden; }
+  .top-video-section .text-slide {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 850px;
+    max-width: 100%;
+    color: white;
+    z-index: 2; }
+    .top-video-section .text-slide h2 {
+      font-size: 46px;
+      text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.75); }
+    .top-video-section .text-slide p {
+      font-size: 21px;
+      text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.75); }
+  @media only screen and (max-width: 992px) {
+    .top-video-section .text-slide h2 {
+      font-size: 41px; } }
+  @media only screen and (max-width: 768px) {
+    .top-video-section .text-slide h2 {
+      font-size: 26px; } }
 
 .bottom-video-section {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 footer {
   overflow: hidden;

@@ -38,6 +38,7 @@
 }
 
 .top-video-section {
+  overflow: hidden;
   .text-slide {
     text-align: center;
     position: absolute;
@@ -78,4 +79,5 @@
 
 .bottom-video-section {
   position: relative;
+  overflow: hidden;
 }
