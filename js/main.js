@@ -13,10 +13,24 @@
     // document.querySelector('#nav-toggle').addEventListener('click', function() {
     //     this.classList.toggle('active');
     // });
-    $('#nav-toggle').click(function() {
-        $(this).toggleClass('active');
-        $('nav').toggle();
+    $(function() {
+        $('#nav-toggle').click(function(e) {
+            $(this).toggleClass('active');
+            $('nav').toggle();
+            e.stopPropagation();
+        });
+        $('html').click(function() {
+            if ($(window).width() <= '992')
+            $('nav').hide();
+        });
     });
+
+
+    //
+    // $('#nav-toggle').click(function(e) {
+    //     $(this).toggleClass('active');
+    //     $('nav').toggle();
+    // });
 
     $('.block-form .header-block').click(function () {
         $('.block-form').toggleClass('open');
