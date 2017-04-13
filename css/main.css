@@ -96,10 +96,8 @@ header .bottom-header {
     margin-left: 10px;
     display: none; }
   @media only screen and (max-width: 500px) {
-    header .bottom-header {
-      justify-content: space-between; }
-      header .bottom-header .phone-number {
-        display: block; } }
+    header .bottom-header .phone-number {
+      display: block; } }
 
 #nav-toggle {
   cursor: pointer;

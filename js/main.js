@@ -1,10 +1,12 @@
 (function($) {
+
+    //open sub menu
     $(function() {
         $('nav ul li > a:not(:only-child)').click(function(e) {
             $(this).toggleClass('open');
             $(this).siblings('.sub-menu').toggle();
             $('.sub-menu').not($(this).siblings()).hide();
-            $('.form-sign-in').hide();
+            // $('.form-sign-in').hide();
             e.stopPropagation();
         });
         $('html').click(function() {
@@ -12,6 +14,7 @@
         });
     });
 
+    //open main menu on tablet and mobile
     $(function() {
         $('#nav-toggle').click(function(e) {
             $(this).toggleClass('active');
@@ -26,11 +29,14 @@
         });
     });
 
+    //open form-block
     $('.block-form .header-block').click(function () {
         $('.block-form').toggleClass('open');
     });
 
-    $('#signIn').click(function () {
+    //open sign-in form
+    $('#signIn').click(function (e) {
+        console.log('click form signIn');
 
             if ($(window).width() <= '992' && $(window).width() >= '768') {
                 $('nav').hide();
@@ -38,9 +44,9 @@
                 $('.form-sign-in').toggle().removeClass('mobile-form-signin');
             }
              else if ($(window).width() <= '768'){
-                $('.form-sign-in').addClass('mobile-form-signin');
-                $('.block-form').toggle();
-                $('.social-bar').toggle();
+                $('.form-sign-in').addClass('mobile-form-signin').show();
+                $('.block-form').hide();
+                $('.social-bar').hide();
                 $('.phone-number').hide();
                 $('nav').hide();
                 $('#nav-toggle').removeClass('active');
@@ -48,15 +54,28 @@
                 console.log('des');
                 $('.form-sign-in').toggle();
             }
+            e.stopPropagation();
 
     });
 
+    //close sign-in form when click outside form
+    $(document).click( function(event){
+        if( $(event.target).closest(".form-sign-in").length )
+            return;
+        $(".form-sign-in").hide();
+        $('.social-bar').show();
+        event.stopPropagation();
+    });
+
+
+    //default options after resize window
     $(window).resize(function() {
         console.log('resize');
         $('.block-form').removeClass('open');
         $('.form-sign-in').hide();
         if ($(window).width() <= '992' && $(window).width() >= '768') {  //992-768
             $('nav').hide();
+            $('.block-form').show();
             $('#nav-toggle').removeClass('active');
             $('.phone-number').hide();
         }
@@ -74,7 +93,8 @@
 
     });
 
-    /************VideoVimeoApi**************/
+
+    // vimeo video api
 
     var iframeTop = $('#top-video');
     var playerTop = new Vimeo.Player(iframeTop);
