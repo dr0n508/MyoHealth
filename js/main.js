@@ -33,6 +33,7 @@
                 $('.form-sign-in').toggleClass('mobile-form-signin');
                 $('.block-form').toggle();
                 $('.social-bar').toggle();
+                $('.phone-number').toggle();
                 $('nav').hide();
                 $('#nav-toggle').removeClass('active');
             } else {
@@ -43,7 +44,7 @@
     });
 
     $(window).resize(function() {
-        console.log('dddddd');
+        console.log('resize');
         $('.block-form').removeClass('open');
         // $('.form-sign-in').hide();
         if ($(window).width() >= '992'){

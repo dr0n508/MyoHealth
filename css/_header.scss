@@ -72,6 +72,19 @@ header .bottom-header {
   justify-content: flex-end;
   height: 55px;
   background-color: #004376;
+  .phone-number {
+    @extend .font-gotham-bold;
+    color: #9ace48;
+    font-size: 18px;
+    margin-left: 10px;
+    display: none;
+  }
+  @media only screen and (max-width: 500px) {
+    justify-content: space-between;
+    .phone-number {
+      display: block;
+    }
+  }
 }
 
 #nav-toggle {

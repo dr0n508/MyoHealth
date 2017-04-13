@@ -90,6 +90,16 @@ header .bottom-header {
   justify-content: flex-end;
   height: 55px;
   background-color: #004376; }
+  header .bottom-header .phone-number {
+    color: #9ace48;
+    font-size: 18px;
+    margin-left: 10px;
+    display: none; }
+  @media only screen and (max-width: 500px) {
+    header .bottom-header {
+      justify-content: space-between; }
+      header .bottom-header .phone-number {
+        display: block; } }
 
 #nav-toggle {
   cursor: pointer;
@@ -243,9 +253,9 @@ header .bottom-header {
   width: 100%; }
   .form-sign-in.mobile-form-signin input {
     width: 33%;
-    margin: 2px; }
+    margin: 3px; }
   .form-sign-in.mobile-form-signin .btn-submit {
-    margin: 2px 15px 2px 2px;
+    margin: 3px 15px 3px 3px;
     width: 33%; }
 
 .block-form.open {
@@ -345,6 +355,21 @@ header .bottom-header {
           border-width: 60px 95px 0 95px; }
         .block-form .header-block h4 {
           font-size: 14px; } }
+  @media only screen and (max-width: 768px) {
+    .block-form {
+      width: 190px;
+      left: 20px; }
+      .block-form .header-block {
+        padding: 10px 10px; }
+        .block-form .header-block:after {
+          border-width: 40px 95px 0 95px; }
+        .block-form .header-block:before {
+          border-width: 60px 95px 0 95px; }
+        .block-form .header-block h4 {
+          font-size: 14px; } }
+  @media only screen and (max-width: 500px) {
+    .block-form {
+      display: none !important; } }
 
 .btn-submit {
   cursor: pointer;
@@ -598,7 +623,7 @@ footer {
   font-weight: normal;
   font-style: normal; }
 
-.font-gotham-bold, .top-header nav ul li a:hover, .btn-submit, .arrow-button, .tips .wrap-text-tip h2, .top-video-section .text-slide h2, .wrap-description .title, .bottom-graphical-nav h3 {
+.font-gotham-bold, .top-header nav ul li a:hover, header .bottom-header .phone-number, .btn-submit, .arrow-button, .tips .wrap-text-tip h2, .top-video-section .text-slide h2, .wrap-description .title, .bottom-graphical-nav h3 {
   font-family: 'Gotham', helvetica, sans-serif;
   font-weight: bold;
   font-style: normal; }
