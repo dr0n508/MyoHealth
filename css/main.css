@@ -531,6 +531,15 @@ header .bottom-header {
   width: 100%;
   height: 100%; }
 
+.overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1; }
+
 .button-play-video {
   content: "";
   cursor: pointer;
@@ -543,7 +552,8 @@ header .bottom-header {
   margin-top: -60px;
   margin-right: -60px;
   top: 50%;
-  right: 50%; }
+  right: 50%;
+  z-index: 2; }
 
 .top-video-section .text-slide {
   text-align: center;
@@ -780,12 +790,5 @@ footer {
         display: block; }
       footer .copyright {
         margin-bottom: 15px; } }
-
-.videoWrapper:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=main.css.map */

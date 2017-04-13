@@ -110,6 +110,10 @@
             //unpause video
             video2.vimeo("play");
             console.log('dn');
+            $(this).siblings(".overlay").hide();
+            // $(this).next(".overlay").hide();
+            // $('.overlay')
+            $('.button-play-video').hide();
             // $(this).css('background', 'url("http://unclebarts.co.uk/wp-content/themes/bungabunga_bootstrap/img/video-controls/pause.png") no-repeat');
         }
     });
