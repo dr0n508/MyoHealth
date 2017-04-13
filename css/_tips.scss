@@ -64,18 +64,18 @@
       width: calc(100% - 160px);
       padding-left: 15px;
       h2 {
-        font-size: 16px;
+        font-size: 17px;
         margin-bottom: 15px;
       }
-      p { font-size: 13px}
+      p { font-size: 14px}
     }
   }
   @media only screen and (max-width: 450px) {
     .wrap-text-tip {
       h2 {
-        font-size: 11px;
+        font-size: 12px;
       }
-      p { font-size: 9px}
+      p { font-size: 10px}
     }
   }
 

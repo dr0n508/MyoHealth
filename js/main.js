@@ -1,60 +1,64 @@
-(function($) {
+$(document).ready(function () {
+
+    var formSignIn = $('.form-sign-in');
+    var mainNav = $('nav');
+    var btnMobileMenu = $('#nav-toggle');
+    var formBlock = $('.block-form');
+    var socialBar = $('.social-bar');
+    var phoneNumber = $('.phone-number');
 
     //open sub menu
-    $(function() {
-        $('nav ul li > a:not(:only-child)').click(function(e) {
-            $(this).toggleClass('open');
-            $(this).siblings('.sub-menu').toggle();
-            $('.sub-menu').not($(this).siblings()).hide();
-            $('.form-sign-in').hide();
-            e.stopPropagation();
-        });
-        $('html').click(function() {
-            $('.sub-menu').hide();
-        });
+
+    $('nav ul li > a:not(:only-child)').click(function(e) {
+        $(this).toggleClass('open');
+        $(this).siblings('.sub-menu').toggle();
+        $('.sub-menu').not($(this).siblings()).hide();
+        formSignIn.hide();
+        e.stopPropagation();
+    });
+    $('html').click(function() {
+        $('.sub-menu').hide();
     });
 
     //open main menu on tablet and mobile
-    $(function() {
-        $('#nav-toggle').click(function(e) {
-            $(this).toggleClass('active');
-            $('nav').toggle();
-            e.stopPropagation();
-        });
-        $('html').click(function() {
-            if ($(window).width() <= '992') {
-                $('nav').hide();
-                $('#nav-toggle').removeClass('active');
-            }
-        });
+
+    btnMobileMenu.click(function(e) {
+        $(this).toggleClass('active');
+        mainNav.toggle();
+        e.stopPropagation();
+    });
+    $('html').click(function() {
+        if ($(window).width() <= '992') {
+            mainNav.hide();
+            btnMobileMenu.removeClass('active');
+        }
     });
 
     //open form-block
     $('.block-form .header-block').click(function () {
-        $('.block-form').toggleClass('open');
+        formBlock.toggleClass('open');
     });
 
     //open sign-in form
     $('#signIn').click(function (e) {
-        console.log('click form signIn');
 
-            if ($(window).width() <= '992' && $(window).width() >= '768') {
-                $('nav').hide();
-                $('#nav-toggle').removeClass('active');
-                $('.form-sign-in').toggle().removeClass('mobile-form-signin');
-            }
-             else if ($(window).width() <= '768'){
-                $('.form-sign-in').addClass('mobile-form-signin').show();
-                $('.block-form').hide();
-                $('.social-bar').hide();
-                $('.phone-number').hide();
-                $('nav').hide();
-                $('#nav-toggle').removeClass('active');
-            } else {
-                $('.form-sign-in').toggle();
-                $('.sub-menu').hide();
-            }
-            e.stopPropagation();
+        if ($(window).width() <= 992 && $(window).width() >= 768) {
+            mainNav.hide();
+            btnMobileMenu.removeClass('active');
+            formSignIn.toggle().removeClass('mobile-form-signin');
+        }
+         else if ($(window).width() <= 768){
+            formSignIn.addClass('mobile-form-signin').show();
+            formBlock.hide();
+            socialBar.hide();
+            phoneNumber.hide();
+            mainNav.hide();
+            btnMobileMenu.removeClass('active');
+        } else {
+            formSignIn.toggle();
+            $('.sub-menu').hide();
+        }
+        e.stopPropagation();
 
     });
 
@@ -62,37 +66,34 @@
     $(document).click( function(event){
         if( $(event.target).closest(".form-sign-in").length )
             return;
-        $(".form-sign-in").hide();
-        $('.social-bar').show();
+        formSignIn.hide();
+        socialBar.show();
         event.stopPropagation();
     });
 
-
     //default options after resize window
     $(window).resize(function() {
-        console.log('resize');
-        $('.block-form').removeClass('open');
-        $('.form-sign-in').hide();
-        if ($(window).width() <= '992' && $(window).width() >= '768') {  //992-768
-            $('nav').hide();
-            $('.block-form').show();
-            $('#nav-toggle').removeClass('active');
-            $('.phone-number').hide();
+        // console.log('resize');
+        formBlock.removeClass('open');
+        formSignIn.hide();
+        if ($(window).width() <= 992 && $(window).width() >= 768) {  //992-768
+            mainNav.hide();
+            formBlock.show();
+            btnMobileMenu.removeClass('active');
+            phoneNumber.hide();
         }
-        else if ($(window).width() <= '768') {                          //0-768
-            $('nav').hide();
-            $('.phone-number').show();
-            $('.social-bar').show();
-            $('.form-sign-in').hide();
+        else if ($(window).width() <= 768) {                          //0-768
+            mainNav.hide();
+            phoneNumber.show();
+            socialBar.show();
+            formSignIn.hide();
         }
         else {                                                          //992+
-            $('nav').show();
-            $('.phone-number').hide();
+            mainNav.show();
+            phoneNumber.hide();
             return this;
         }
-
     });
-
 
     // vimeo video api
 
@@ -123,4 +124,4 @@
         }
     });
 
-})(jQuery);
+});

@@ -462,15 +462,15 @@ header .bottom-header {
         width: calc(100% - 160px);
         padding-left: 15px; }
         .tips .wrap-text-tip h2 {
-          font-size: 16px;
+          font-size: 17px;
           margin-bottom: 15px; }
         .tips .wrap-text-tip p {
-          font-size: 13px; } }
+          font-size: 14px; } }
   @media only screen and (max-width: 450px) {
     .tips .wrap-text-tip h2 {
-      font-size: 11px; }
+      font-size: 12px; }
     .tips .wrap-text-tip p {
-      font-size: 9px; } }
+      font-size: 10px; } }
   @media only screen and (max-width: 450px) {
     .tips .wrap-img-tip {
       width: 120px;
