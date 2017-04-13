@@ -46,16 +46,20 @@
     $(window).resize(function() {
         console.log('resize');
         $('.block-form').removeClass('open');
-        // $('.form-sign-in').hide();
-        if ($(window).width() >= '992'){
+        $('.form-sign-in').hide();
+        if ($(window).width() <= '992' && $(window).width() >= '768') {  //992-768
+            $('nav').hide();
+            $('#nav-toggle').removeClass('active');
+        }
+        else if ($(window).width() <= '768') {                          //0-768
+            $('nav').hide();
+        }
+        else {                                                          //992+
             $('nav').show();
             return this;
         }
-        else   {
-            $('nav').hide();
-            $('#nav-toggle').removeClass('active');
 
-        }
+
 
     });
 
