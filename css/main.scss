@@ -41,6 +41,7 @@
   font-family: 'Gotham', helvetica, sans-serif;
   font-weight: 500;
   font-style: normal;
+
 }
 
 body {
@@ -48,6 +49,7 @@ body {
   margin: 0;
   font-family: 'Gotham Book', helvetica, sans-serif;
   font-size: 16px;
+  background-color: #f3f3f3;
 }
 
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
@@ -62,11 +64,18 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   -moz-box-sizing: border-box;
 }
 
+.container {
+  background: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .social-bar {
   position: fixed;
   z-index: 2;
   right: 0px;
-  top: 150px;
+  top: 200px;
   background-color: #b2d234;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   ul {
@@ -88,10 +97,15 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   }
 }
 
+
+// description product section
+
 .description-product-section {
-  background: url("../img/bg-smart.jpg");
-  background-size: cover;
-  padding: 60px 0;
+  .container {
+    background: url("../img/bg-smart.jpg");
+    background-size: cover;
+    padding: 60px 0;
+  }
 }
 
 .compose-img {
@@ -153,6 +167,8 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
     }
   }
 }
+
+//// bottom nav section
 
 .bottom-graphical-nav {
   overflow: hidden;

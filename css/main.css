@@ -63,6 +63,8 @@
           .top-header nav ul li a:hover {
             color: #005da4;
             text-decoration: none; }
+        .top-header nav ul li:last-child {
+          margin-right: 30px; }
       .top-header nav ul .link-with-border {
         border: solid 1px #847c78; }
         .top-header nav ul .link-with-border:hover {
@@ -91,17 +93,16 @@ header .bottom-header {
   height: 55px;
   background-color: #004376; }
   header .bottom-header .phone-number {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-right: 20px;
     color: #9ace48;
     font-size: 18px;
-    margin-left: 10px;
-    display: none; }
+    margin-left: 10px; }
   @media only screen and (max-width: 500px) {
     header .bottom-header .phone-number {
-      display: block; } }
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); } }
 
 #nav-toggle {
   cursor: pointer;
@@ -436,8 +437,9 @@ header .bottom-header {
     border-color: transparent transparent transparent #00afef; }
 
 .tips {
-  padding: 110px 100px 50px 100px;
   overflow: hidden; }
+  .tips .container {
+    padding: 110px 20px 50px 20px; }
   .tips .tip1 .wrap-img-tip {
     background: url("../img/tips/486888646.jpg") no-repeat 50% 50%; }
   .tips .tip2 .wrap-img-tip {
@@ -466,27 +468,27 @@ header .bottom-header {
     .tips .wrap-text-tip p {
       font-size: 21px; }
   @media only screen and (max-width: 992px) {
-    .tips {
+    .tips .container {
       padding: 25px; }
-      .tips .wrap-text-tip {
-        padding-left: 40px; } }
+    .tips .wrap-text-tip {
+      padding-left: 40px; } }
   @media only screen and (max-width: 768px) {
-    .tips {
+    .tips .container {
       padding: 10px; }
-      .tips .list-tips li {
-        align-items: flex-start;
-        margin-bottom: 40px; }
-      .tips .wrap-img-tip {
-        width: 160px;
-        height: 160px; }
-      .tips .wrap-text-tip {
-        width: calc(100% - 160px);
-        padding-left: 15px; }
-        .tips .wrap-text-tip h2 {
-          font-size: 17px;
-          margin-bottom: 15px; }
-        .tips .wrap-text-tip p {
-          font-size: 14px; } }
+    .tips .list-tips li {
+      align-items: flex-start;
+      margin-bottom: 40px; }
+    .tips .wrap-img-tip {
+      width: 160px;
+      height: 160px; }
+    .tips .wrap-text-tip {
+      width: calc(100% - 160px);
+      padding-left: 15px; }
+      .tips .wrap-text-tip h2 {
+        font-size: 17px;
+        margin-bottom: 15px; }
+      .tips .wrap-text-tip p {
+        font-size: 14px; } }
   @media only screen and (max-width: 450px) {
     .tips .wrap-text-tip h2 {
       font-size: 12px; }
@@ -500,8 +502,10 @@ header .bottom-header {
       width: calc(100% - 120px); } }
 
 .recipes {
-  padding: 110px 100px 50px 100px;
   overflow: hidden; }
+  .recipes .container {
+    padding: 110px 0 50px 0;
+    overflow: hidden; }
 
 .list-recipes li {
   width: 33.33%;
@@ -530,14 +534,14 @@ header .bottom-header {
     background-size: cover; }
 
 @media only screen and (max-width: 992px) {
-  .recipes {
+  .recipes .container {
     padding: 32px 32px 50px 32px; }
 
   .list-recipes li {
     width: 50%;
     padding: 0 22px; } }
 @media only screen and (max-width: 768px) {
-  .recipes {
+  .recipes .container {
     padding: 10px 10px 20px 10px; }
 
   .list-recipes li {
@@ -615,8 +619,10 @@ header .bottom-header {
 footer {
   overflow: hidden;
   font-size: 12px;
-  color: #afaaa8;
-  padding: 30px; }
+  color: #afaaa8; }
+  footer .container {
+    overflow: hidden;
+    padding: 30px; }
   footer .copyright {
     float: left; }
   footer .footer-link {
@@ -667,7 +673,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Gotham Book', helvetica, sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  background-color: #f3f3f3; }
 
 div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
   padding: 0;
@@ -679,11 +686,17 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; }
 
+.container {
+  background: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative; }
+
 .social-bar {
   position: fixed;
   z-index: 2;
   right: 0px;
-  top: 150px;
+  top: 200px;
   background-color: #b2d234;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); }
   .social-bar ul {
@@ -699,7 +712,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   .social-bar .youtube-link {
     background: url("../img/icon-youtube.png") no-repeat 50% 50%; }
 
-.description-product-section {
+.description-product-section .container {
   background: url("../img/bg-smart.jpg");
   background-size: cover;
   padding: 60px 0; }

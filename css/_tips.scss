@@ -1,7 +1,7 @@
 .tips {
-  padding: 110px 100px 50px 100px;
-  //background: url("../img/bg-smart.png");
-  //background-size: cover;
+  .container  {
+    padding: 110px 20px 50px 20px;
+  }
   overflow: hidden;
   .tip1 .wrap-img-tip {
     background: url("../img/tips/486888646.jpg") no-repeat 50% 50%;
@@ -45,13 +45,17 @@
     }
   }
   @media only screen and (max-width: 992px) {
-    padding: 25px;
+    .container {
+      padding: 25px;
+    }
     .wrap-text-tip {
       padding-left: 40px;
     }
   }
   @media only screen and (max-width: 768px) {
-    padding: 10px;
+    .container {
+      padding: 10px;
+    }
     .list-tips li {
       align-items: flex-start;
       margin-bottom: 40px;

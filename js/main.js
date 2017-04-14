@@ -17,10 +17,12 @@ $(document).ready(function () {
         $(this).siblings('.sub-menu').toggle();
         $('.sub-menu').not($(this).siblings()).hide();
         formSignIn.hide();
+        phoneNumber.hide();
         e.stopPropagation();
     });
     $('html').click(function() {
         $('.sub-menu').hide();
+        phoneNumber.show();
     });
 
     //open main menu on tablet and mobile
@@ -71,6 +73,7 @@ $(document).ready(function () {
             return;
         formSignIn.hide();
         socialBar.show();
+        phoneNumber.show();
         event.stopPropagation();
     });
 
@@ -83,7 +86,7 @@ $(document).ready(function () {
             mainNav.hide();
             formBlock.show();
             btnMobileMenu.removeClass('active');
-            phoneNumber.hide();
+            // phoneNumber.hide();
         }
         else if ($(window).width() <= mobileBreakpoint) {                          //0-768
             mainNav.hide();
@@ -93,7 +96,7 @@ $(document).ready(function () {
         }
         else {                                                          //992+
             mainNav.show();
-            phoneNumber.hide();
+            // phoneNumber.hide();
             return this;
         }
     });
